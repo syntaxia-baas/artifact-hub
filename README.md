@@ -156,7 +156,7 @@ Individual templates: **Platform-Restricted License** - Templates are freely dow
 ## 💡 Why Platform-Exclusive?
 
 Our technical templates require:
-- **Deep system integration** with code repositories, databases, and infrastructure
+- **Deep system integration** with the platform. However artifacts like dashboards and other interactive can be publicly made available in read-only manner
 - **Specialized analysis engines** for accurate architectural assessment
 - **Enterprise security context** for safe system access and evaluation
 - **Real-time system connectivity** that adapts to your specific technology stack
