@@ -1,7 +1,18 @@
 {
-  "lastUpdated": "2025-07-01T12:03:00.462Z",
-  "totalTemplates": 2,
+  "lastUpdated": "2025-07-01T19:49:51.550Z",
+  "totalTemplates": 3,
   "graphs": [
+    {
+      "id": "01JYPS7J4M1X9476DPHKGSAZ14",
+      "name": "Profiles builder",
+      "createdAt": "2025-07-01T19:49:50.381Z",
+      "updatedAt": "2025-07-01T19:49:50.381Z",
+      "createdBy": "347fe6b4-4e24-498e-b858-7c1eab51918b",
+      "downloadCount": 0,
+      "description": "Takes context as input along with entity information (Core Entities, Systems) and extends the domain by identifying and mapping data structures.",
+      "filePath": "templates/profiles-builder.json",
+      "version": "0.0.2"
+    },
     {
       "id": "01JZ27Z48D59PZ030BEHMVCSJG",
       "name": "Meta Graph to Publish",
