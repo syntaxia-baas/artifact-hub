@@ -1,0 +1,88 @@
+{
+  "id": "01JZ27Z48D59PZ030BEHMVCSJG",
+  "definition": {
+    "name": "Meta Graph to Publish",
+    "slug": "meta-graph-to-publish",
+    "description": "First graph to publish",
+    "conversationStarter": "test",
+    "version": "0.0.1",
+    "icon": null,
+    "capabilities": [],
+    "examples": [],
+    "tags": [
+      "startups",
+      "it-teams"
+    ],
+    "artifactParams": {
+      "type": "WorkspaceArtifactParams",
+      "workspaceCode": "wsp-o-hd7js5i4cd"
+    },
+    "groupId": "cg-org-g-s922vrvzzt-wsp-o-hd7js5i4cd",
+    "artifactType": "workspace_system",
+    "artifactId": null,
+    "hydrationStatus": "new",
+    "orgCode": "org-g-s922vrvzzt"
+  },
+  "detail": {
+    "id": "01JZ27Z553TCEZBRE29ZBTAT92",
+    "metaGraphDefinitionId": "01JZ27Z48D59PZ030BEHMVCSJG",
+    "nodes": [
+      {
+        "nodePath": "system/__start__",
+        "nodeInstanceName": "__start__",
+        "displayName": "__start__",
+        "description": "Starting point of the workflow",
+        "kind": "start",
+        "capabilities": [
+          "workflow:start"
+        ],
+        "fieldMappings": []
+      },
+      {
+        "nodePath": "system/__end__",
+        "nodeInstanceName": "__end__",
+        "displayName": "__end__",
+        "description": "Ending point of the workflow",
+        "kind": "end",
+        "capabilities": [
+          "workflow:end"
+        ],
+        "fieldMappings": []
+      },
+      {
+        "nodePath": "helper/sub-graph-node",
+        "nodeInstanceName": "node_1751348999760",
+        "displayName": "sub-graph-node",
+        "description": "Node that executes a sub-graph defined by a meta agent definition",
+        "kind": "internal",
+        "capabilities": [],
+        "fieldMappings": []
+      }
+    ],
+    "edges": [
+      {
+        "id": "edge_1751349008501",
+        "from": "__start__",
+        "to": "node_1751348999760"
+      },
+      {
+        "id": "edge_1751349011966",
+        "from": "node_1751348999760",
+        "to": "__end__"
+      }
+    ],
+    "conditionalEdges": [],
+    "executionConfig": null,
+    "status": null,
+    "orgCode": "org-g-s922vrvzzt"
+  },
+  "license": "Mit",
+  "metadata": {
+    "downloadCount": 0
+  },
+  "disable": false,
+  "createdAt": "2025-07-01T11:21:57.391Z",
+  "updatedAt": "2025-07-01T11:21:57.391Z",
+  "createdBy": "347fe6b4-4e24-498e-b858-7c1eab51918b",
+  "updatedBy": "347fe6b4-4e24-498e-b858-7c1eab51918b"
+}
