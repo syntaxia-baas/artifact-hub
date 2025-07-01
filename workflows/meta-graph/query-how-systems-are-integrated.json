@@ -1,0 +1,108 @@
+{
+  "id": "01JYPDZBVTRKNW8NPMCYV449RR",
+  "name": "System Intelligence Agent",
+  "description": "Enables natural language querying across your mapped digital systems and connections. Analyzes relationships, dependencies, and data flows to provide actionable insights about system performance, integration bottlenecks, and architectural patterns within your environment.",
+  "graphDefinitionContainer": {
+    "definition": {
+      "name": "System Intelligence Agent",
+      "slug": "query-how-systems-are-integrated",
+      "description": "Enables natural language querying across your mapped digital systems and connections. Analyzes relationships, dependencies, and data flows to provide actionable insights about system performance, integration bottlenecks, and architectural patterns within your environment.",
+      "version": "0.0.1",
+      "conversationStarter": "🔗 Describe which systems you want to know about and their dependencies.",
+      "groupId": "cg-org-g-s922vrvzzt-wsp-o-hd7js5i4cd",
+      "hydrationStatus": "new",
+      "artifactType": "workspace_system",
+      "artifactId": null,
+      "orgCode": "org-g-s922vrvzzt",
+      "icon": "SquaresIntersect",
+      "capabilities": [],
+      "examples": [],
+      "tags": [
+        "it-teams",
+        "collaboration",
+        "product-teams",
+        "operations-teams"
+      ],
+      "artifactParams": {
+        "type": "WorkspaceArtifactParams",
+        "workspaceCode": "wsp-o-hd7js5i4cd"
+      },
+      "inputSchema": null,
+      "outputSchema": null,
+      "id": "01JYPDZBVTRKNW8NPMCYV449RR",
+      "createdAt": "2025-06-26T15:33:51.006Z",
+      "createdBy": "347fe6b4-4e24-498e-b858-7c1eab51918b",
+      "updatedAt": "2025-06-28T08:19:11.653Z",
+      "updatedBy": "347fe6b4-4e24-498e-b858-7c1eab51918b",
+      "disable": false
+    },
+    "detail": {
+      "metaGraphDefinitionId": "01JYPDZBVTRKNW8NPMCYV449RR",
+      "nodes": [
+        {
+          "nodePath": "system/__start__",
+          "nodeInstanceName": "__start__",
+          "displayName": "__start__",
+          "description": "Starting point of the workflow",
+          "kind": "start",
+          "capabilities": [
+            "workflow:start"
+          ],
+          "fieldMappings": []
+        },
+        {
+          "nodePath": "system/__end__",
+          "nodeInstanceName": "__end__",
+          "displayName": "__end__",
+          "description": "Ending point of the workflow",
+          "kind": "end",
+          "capabilities": [
+            "workflow:end"
+          ],
+          "fieldMappings": []
+        },
+        {
+          "nodePath": "artifacts/workspace_system/init-workspace",
+          "nodeInstanceName": "node_1750952101322",
+          "displayName": "init-workspace",
+          "description": "",
+          "kind": "tool-call",
+          "capabilities": [],
+          "fieldMappings": []
+        }
+      ],
+      "edges": [
+        {
+          "id": "__start__-to-__end__",
+          "from": "__start__",
+          "to": "__end__",
+          "description": ""
+        }
+      ],
+      "orgCode": "org-g-s922vrvzzt",
+      "conditionalEdges": [],
+      "visualRepresentation": null,
+      "executionConfig": null,
+      "status": null,
+      "id": "01JYPDZCRZ46HCW8979MRPCHX6",
+      "createdAt": "2025-06-26T15:33:51.008Z",
+      "createdBy": "347fe6b4-4e24-498e-b858-7c1eab51918b",
+      "updatedAt": "2025-06-28T08:19:11.653Z",
+      "updatedBy": "347fe6b4-4e24-498e-b858-7c1eab51918b",
+      "disable": false
+    }
+  },
+  "createdBy": "347fe6b4-4e24-498e-b858-7c1eab51918b",
+  "version": "0.0.1",
+  "category": "meta-graph",
+  "tags": [
+    "it-teams",
+    "collaboration",
+    "product-teams",
+    "operations-teams"
+  ],
+  "license": "MIT",
+  "createdAt": "2025-07-01T06:07:32.277Z",
+  "updatedAt": "2025-07-01T06:07:32.277Z",
+  "downloadCount": 0
+}
