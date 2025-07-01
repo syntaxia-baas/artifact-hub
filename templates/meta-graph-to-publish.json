@@ -5,8 +5,8 @@
     "slug": "meta-graph-to-publish",
     "description": "First graph to publish",
     "conversationStarter": "test",
-    "version": "0.0.1",
-    "icon": null,
+    "version": "0.0.2",
+    "icon": "Test",
     "capabilities": [],
     "examples": [],
     "tags": [
@@ -81,8 +81,8 @@
     "downloadCount": 0
   },
   "disable": false,
-  "createdAt": "2025-07-01T11:21:57.391Z",
-  "updatedAt": "2025-07-01T11:21:57.391Z",
+  "createdAt": "2025-07-01T11:50:58.646Z",
+  "updatedAt": "2025-07-01T11:50:58.646Z",
   "createdBy": "347fe6b4-4e24-498e-b858-7c1eab51918b",
   "updatedBy": "347fe6b4-4e24-498e-b858-7c1eab51918b"
 }
