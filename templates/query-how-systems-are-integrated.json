@@ -1,0 +1,86 @@
+{
+  "id": "01JYPDZBVTRKNW8NPMCYV449RR",
+  "definition": {
+    "name": "System Intelligence Agent",
+    "slug": "query-how-systems-are-integrated",
+    "description": "Enables natural language querying across your mapped digital systems and connections. Analyzes relationships, dependencies, and data flows to provide actionable insights about system performance, integration bottlenecks, and architectural patterns within your environment.",
+    "conversationStarter": "🔗 Describe which systems you want to know about and their dependencies.",
+    "version": "0.0.1",
+    "icon": "SquaresIntersect",
+    "capabilities": [],
+    "examples": [],
+    "tags": [
+      "it-teams",
+      "collaboration",
+      "product-teams",
+      "operations-teams"
+    ],
+    "artifactParams": {
+      "type": "WorkspaceArtifactParams",
+      "workspaceCode": "wsp-o-hd7js5i4cd"
+    },
+    "groupId": "cg-org-g-s922vrvzzt-wsp-o-hd7js5i4cd",
+    "artifactType": "workspace_system",
+    "artifactId": null,
+    "hydrationStatus": "new",
+    "orgCode": "org-g-s922vrvzzt"
+  },
+  "detail": {
+    "id": "01JYPDZCRZ46HCW8979MRPCHX6",
+    "metaGraphDefinitionId": "01JYPDZBVTRKNW8NPMCYV449RR",
+    "nodes": [
+      {
+        "nodePath": "system/__start__",
+        "nodeInstanceName": "__start__",
+        "displayName": "__start__",
+        "description": "Starting point of the workflow",
+        "kind": "start",
+        "capabilities": [
+          "workflow:start"
+        ],
+        "fieldMappings": []
+      },
+      {
+        "nodePath": "system/__end__",
+        "nodeInstanceName": "__end__",
+        "displayName": "__end__",
+        "description": "Ending point of the workflow",
+        "kind": "end",
+        "capabilities": [
+          "workflow:end"
+        ],
+        "fieldMappings": []
+      },
+      {
+        "nodePath": "artifacts/workspace_system/init-workspace",
+        "nodeInstanceName": "node_1750952101322",
+        "displayName": "init-workspace",
+        "description": "",
+        "kind": "tool-call",
+        "capabilities": [],
+        "fieldMappings": []
+      }
+    ],
+    "edges": [
+      {
+        "id": "__start__-to-__end__",
+        "from": "__start__",
+        "to": "__end__",
+        "description": ""
+      }
+    ],
+    "conditionalEdges": [],
+    "executionConfig": null,
+    "status": null,
+    "orgCode": "org-g-s922vrvzzt"
+  },
+  "license": "Mit",
+  "metadata": {
+    "downloadCount": 0
+  },
+  "disable": false,
+  "createdAt": "2025-07-01T19:54:30.048Z",
+  "updatedAt": "2025-07-01T19:54:30.048Z",
+  "createdBy": "347fe6b4-4e24-498e-b858-7c1eab51918b",
+  "updatedBy": "347fe6b4-4e24-498e-b858-7c1eab51918b"
+}
