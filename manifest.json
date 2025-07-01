@@ -1,7 +1,18 @@
 {
-  "lastUpdated": "2025-07-01T11:21:58.695Z",
-  "totalTemplates": 1,
+  "lastUpdated": "2025-07-01T11:29:49.995Z",
+  "totalTemplates": 2,
   "graphs": [
+    {
+      "id": "01JYP6R1V0N4SFDWRQDY8FRRTH",
+      "name": "Initialize workspace",
+      "createdAt": "2025-07-01T11:29:48.924Z",
+      "updatedAt": "2025-07-01T11:29:48.924Z",
+      "createdBy": "347fe6b4-4e24-498e-b858-7c1eab51918b",
+      "downloadCount": 0,
+      "description": "discovers and maps your digital environment by creating entities, processes, and systems along with their interconnections. Generates business-specific attributes and metadata tailored to your organizational context, establishing a foundational knowledge graph for downstream automation and analysis",
+      "filePath": "templates/initialize-workspace.json",
+      "version": "0.0.1"
+    },
     {
       "id": "01JZ27Z48D59PZ030BEHMVCSJG",
       "name": "Meta Graph to Publish",
