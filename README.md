@@ -12,7 +12,7 @@ A centralized repository for sharing and discovering reusable digital artifacts 
 
 ### 🔄 Meta-Graph Templates
 Complete definitions for workflows, agents, and process automation
-- **Workflows**: Business process automation templates
+- **Workflows**: Architecture analysis automation templates
 - **Agents**: AI agent configurations and behaviors  
 - **Automations**: Task automation and integration flows
 - **Pipelines**: Data processing and CI/CD pipelines
