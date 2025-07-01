@@ -1,17 +1,17 @@
 {
-  "lastUpdated": "2025-07-01T11:50:59.671Z",
+  "lastUpdated": "2025-07-01T12:03:00.462Z",
   "totalTemplates": 2,
   "graphs": [
     {
       "id": "01JZ27Z48D59PZ030BEHMVCSJG",
       "name": "Meta Graph to Publish",
-      "createdAt": "2025-07-01T11:50:58.646Z",
-      "updatedAt": "2025-07-01T11:50:58.646Z",
+      "createdAt": "2025-07-01T12:02:59.338Z",
+      "updatedAt": "2025-07-01T12:02:59.338Z",
       "createdBy": "347fe6b4-4e24-498e-b858-7c1eab51918b",
       "downloadCount": 0,
       "description": "First graph to publish",
       "filePath": "templates/meta-graph-to-publish.json",
-      "version": "0.0.2"
+      "version": "0.0.3"
     },
     {
       "id": "01JYP6R1V0N4SFDWRQDY8FRRTH",
