@@ -8,9 +8,8 @@ A centralized repository of intelligent agent templates for **system analysis**,
 
 ### 🔍 System Analysis Agents
 AI agents for comprehensive system evaluation and insights
-- **Architecture Analysis**: Code structure, dependency mapping, and design pattern detection
+- **Architecture Analysis**: solution architecture, dependency mapping, and design pattern detection
 - **Performance Monitoring**: System bottlenecks, resource utilization, and optimization recommendations
-- **Security Assessment**: Vulnerability scanning, compliance checking, and risk analysis
 - **Legacy System Analysis**: Technical debt assessment and modernization planning
 
 ### 🏗️ Software Architecture Agents
