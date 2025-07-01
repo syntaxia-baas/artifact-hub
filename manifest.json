@@ -1,7 +1,18 @@
 {
-  "lastUpdated": "2025-07-01T19:52:37.587Z",
-  "totalTemplates": 3,
+  "lastUpdated": "2025-07-01T19:54:31.174Z",
+  "totalTemplates": 4,
   "graphs": [
+    {
+      "id": "01JYPDZBVTRKNW8NPMCYV449RR",
+      "name": "System Intelligence Agent",
+      "createdAt": "2025-07-01T19:54:30.048Z",
+      "updatedAt": "2025-07-01T19:54:30.048Z",
+      "createdBy": "347fe6b4-4e24-498e-b858-7c1eab51918b",
+      "downloadCount": 0,
+      "description": "Enables natural language querying across your mapped digital systems and connections. Analyzes relationships, dependencies, and data flows to provide actionable insights about system performance, integration bottlenecks, and architectural patterns within your environment.",
+      "filePath": "templates/query-how-systems-are-integrated.json",
+      "version": "0.0.1"
+    },
     {
       "id": "01JYPS7J4M1X9476DPHKGSAZ14",
       "name": "Domain Attributes builder",
