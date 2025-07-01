@@ -1,378 +1,167 @@
 # Artifact Hub 🚀
 
-A centralized repository for sharing and discovering reusable digital artifacts including meta-graph templates, dashboards, and document structures.
+A centralized repository of intelligent agent templates for **system analysis**, **software architecture**, and **infrastructure maintenance**. Accelerate your technical operations with pre-built AI agents that understand your technology stack and organizational context.
 
-## 📋 Repository Description
+## 🎯 What's This For?
 
-**Artifact Hub** is an open-source marketplace for developers and teams to publish, discover, and download ready-to-use digital artifacts. Whether you're building workflows, designing dashboards, or structuring documents, find what you need or contribute your own creations to help the community.
+**Artifact Hub** provides specialized agent templates for **technical workspace initialization**. These templates automatically configure based on your system architecture and organizational requirements, delivering production-ready technical intelligence from day one.
 
----
+### 🔍 System Analysis Agents
+AI agents for comprehensive system evaluation and insights
+- **Architecture Analysis**: Code structure, dependency mapping, and design pattern detection
+- **Performance Monitoring**: System bottlenecks, resource utilization, and optimization recommendations
+- **Security Assessment**: Vulnerability scanning, compliance checking, and risk analysis
+- **Legacy System Analysis**: Technical debt assessment and modernization planning
 
-## 🎯 What's Inside
+### 🏗️ Software Architecture Agents
+Intelligent assistants for architectural decision-making
+- **Design Pattern Advisors**: Best practice recommendations for system design
+- **Technology Stack Analyzers**: Framework compatibility and integration guidance
+- **Scalability Planners**: Growth projections and infrastructure recommendations
+- **API Design Assistants**: RESTful design, documentation, and testing automation
 
-### 🔄 Meta-Graph Templates
-Complete definitions for workflows, agents, and process automation
-- **Workflows**: Architecture analysis automation templates
-- **Agents**: AI agent configurations and behaviors  
-- **Automations**: Task automation and integration flows
-- **Pipelines**: Data processing and CI/CD pipelines
+### 🔧 System Maintenance Agents
+Proactive maintenance and operational intelligence
+- **Automated Diagnostics**: Issue detection, root cause analysis, and resolution suggestions
+- **Infrastructure Monitors**: Cloud resource optimization and cost analysis
 
-### 📊 Dashboards
-Ready-to-use dashboard configurations and layouts
-- **Analytics Dashboards**: Business intelligence and KPI tracking
-- **Monitoring Dashboards**: System health and performance metrics
-- **Executive Dashboards**: High-level business overviews
-- **Custom Dashboards**: Domain-specific visualization templates
-
-### 📄 Documents
-Structured document templates and schemas
-- **Report Templates**: Business reports and documentation formats
-- **Form Schemas**: Data collection and input forms
-- **Configuration Files**: Application and service configurations
-- **Data Models**: Schema definitions and data structures
-
----
-
-## 🏗️ Repository Structure
-
-```
-artifact-hub/
-├── manifests/
-│   ├── master.json              # Main registry index
-│   ├── meta-graphs.json         # Meta-graph templates manifest
-│   ├── dashboards.json          # Dashboard templates manifest
-│   └── documents.json           # Document templates manifest
-├── artifacts/
-│   ├── meta-graphs/
-│   │   ├── workflows/
-│   │   │   ├── data-processing/
-│   │   │   ├── notifications/
-│   │   │   └── integrations/
-│   │   ├── agents/
-│   │   │   ├── chatbots/
-│   │   │   ├── automation/
-│   │   │   └── analytics/
-│   │   └── pipelines/
-│   │       ├── etl/
-│   │       ├── ci-cd/
-│   │       └── data-science/
-│   ├── dashboards/
-│   │   ├── analytics/
-│   │   ├── monitoring/
-│   │   ├── executive/
-│   │   └── custom/
-│   └── documents/
-│       ├── reports/
-│       ├── forms/
-│       ├── configs/
-│       └── schemas/
-├── examples/
-│   ├── getting-started/
-│   ├── advanced-usage/
-│   └── integration-guides/
-├── scripts/
-│   ├── validate-manifest.js
-│   ├── generate-manifest.js
-│   └── check-integrity.js
-└── docs/
-    ├── contributing.md
-    ├── artifact-schemas.md
-    └── api-reference.md
-```
+### 📊 Technical Dashboards
+Real-time insights into system health and architecture metrics
+- **System Health Dashboards**: Performance metrics, uptime, and alert management
+- **Architecture Overview**: Component relationships, data flow, and dependency visualization
+- **Maintenance Dashboards**: Technical debt tracking, update schedules, and compliance status
 
 ---
 
 ## 🚀 Quick Start
 
-### For Users (Downloading Artifacts)
+### Get Technical Templates
+Access specialized templates through the platform:
 
-1. **Browse Available Artifacts**
-   ```bash
-   curl "https://api.yourdomain.com/v1/meta-graphs?category=workflows"
-   curl "https://api.yourdomain.com/v1/dashboards?tags=analytics"
-   curl "https://api.yourdomain.com/v1/documents?type=reports"
-   ```
+```bash
+# Browse system analysis agents
+GET /api/v1/agents?category=system-analysis
 
-2. **Download Specific Artifact**
-   ```bash
-   curl "https://api.yourdomain.com/v1/meta-graphs/data-processor-v1.0/download"
-   ```
+# Download architecture assistant
+GET /api/v1/agents/architecture-analyzer-v2.1/download
 
-3. **Search Across All Types**
-   ```bash
-   curl "https://api.yourdomain.com/v1/search?q=customer%20analytics"
-   ```
+# Search maintenance tools
+GET /api/v1/search?q=database%20optimization
+```
 
-### For Contributors (Publishing Artifacts)
-
-1. **Fork this repository**
-2. **Create your artifact** following our [schema guidelines](docs/artifact-schemas.md)
-3. **Submit a pull request** with your artifact and updated manifest
-4. **Get reviewed** by our community maintainers
+### Platform Integration
+These templates are **designed exclusively for our technical platform** and include deep system integration, security protocols, and architectural context awareness that requires our specialized infrastructure.
 
 ---
 
-## 📝 Artifact Schemas
+## 📝 Agent Registry Manifest
 
-### Meta-Graph Template
 ```json
 {
-  "id": "customer-onboarding-v2.1",
-  "name": "Customer Onboarding Workflow",
-  "type": "meta-graph",
-  "subtype": "workflow",
-  "version": "2.1.0",
-  "description": "Complete customer onboarding automation",
-  "category": "workflows",
-  "subcategory": "customer-management",
-  "tags": ["onboarding", "automation", "crm"],
-  "author": "jane.smith",
-  "license": "MIT",
-  "publishedDate": "2025-06-28T10:30:00Z",
-  "graph": {
-    "nodes": [
-      {
-        "id": "start",
-        "type": "trigger",
-        "data": { "event": "customer_signup" }
-      },
-      {
-        "id": "validate",
-        "type": "validator",
-        "data": { "schema": "customer_schema" }
-      }
-    ],
-    "edges": [
-      { "source": "start", "target": "validate" }
-    ]
-  },
-  "metadata": {
-    "difficulty": "intermediate",
-    "estimatedSetupTime": "15 minutes",
-    "requiredIntegrations": ["crm", "email"],
-    "compatibility": ["platform-v2.x", "platform-v3.x"]
-  }
-}
-```
-
-### Dashboard Template
-```json
-{
-  "id": "sales-analytics-v1.3",
-  "name": "Sales Analytics Dashboard",
-  "type": "dashboard",
-  "subtype": "analytics",
-  "version": "1.3.0",
-  "description": "Comprehensive sales performance dashboard",
-  "category": "analytics",
-  "subcategory": "sales",
-  "tags": ["sales", "kpi", "revenue", "charts"],
-  "author": "analytics.team",
-  "license": "Apache-2.0",
-  "publishedDate": "2025-06-25T14:20:00Z",
-  "dashboard": {
-    "layout": {
-      "type": "grid",
-      "columns": 12,
-      "rows": 8
+  "lastUpdated": "2025-07-01T19:54:43.372Z",
+  "totalTemplates": 5,
+  "graphs": [
+    {
+      "id": "01JYPDP8FKHCN5SSKFY05A85HX",
+      "name": "Attribute Enhancement Agent",
+      "createdAt": "2025-07-01T19:54:42.399Z",
+      "updatedAt": "2025-07-01T19:54:42.399Z",
+      "createdBy": "347fe6b4-4e24-498e-b858-7c1eab51918b",
+      "downloadCount": 0,
+      "description": "Identifies and adds business-specific metadata, tags, and custom properties to existing entities and systems. Adapts organizational taxonomies and domain-specific classifications to enrich your knowledge graph with contextual business intelligence.",
+      "filePath": "templates/update-system-with-new-profiles.json",
+      "version": "0.0.1"
     },
-    "widgets": [
-      {
-        "id": "revenue_chart",
-        "type": "line_chart",
-        "position": { "x": 0, "y": 0, "w": 6, "h": 3 },
-        "config": {
-          "title": "Monthly Revenue Trend",
-          "dataSource": "sales_db",
-          "query": "SELECT month, revenue FROM sales_monthly"
-        }
-      }
-    ],
-    "filters": [
-      {
-        "field": "date_range",
-        "type": "daterange",
-        "default": "last_30_days"
-      }
-    ]
-  },
-  "metadata": {
-    "requiredDataSources": ["sales_db", "crm_api"],
-    "updateFrequency": "real-time",
-    "targetAudience": ["sales_managers", "executives"]
-  }
-}
-```
-
-### Document Template
-```json
-{
-  "id": "quarterly-report-v1.0",
-  "name": "Quarterly Business Report",
-  "type": "document",
-  "subtype": "report",
-  "version": "1.0.0",
-  "description": "Standard quarterly business report template",
-  "category": "reports",
-  "subcategory": "business",
-  "tags": ["quarterly", "business", "executive", "template"],
-  "author": "business.team",
-  "license": "CC-BY-4.0",
-  "publishedDate": "2025-06-20T09:15:00Z",
-  "document": {
-    "format": "json-schema",
-    "structure": {
-      "sections": [
-        {
-          "id": "executive_summary",
-          "title": "Executive Summary",
-          "type": "text",
-          "required": true,
-          "maxLength": 1000
-        },
-        {
-          "id": "financial_highlights",
-          "title": "Financial Highlights",
-          "type": "table",
-          "required": true,
-          "schema": {
-            "columns": ["metric", "q3_2025", "q2_2025", "change"]
-          }
-        }
-      ]
+    {
+      "id": "01JYPDZBVTRKNW8NPMCYV449RR",
+      "name": "System Intelligence Agent",
+      "createdAt": "2025-07-01T19:54:30.048Z",
+      "updatedAt": "2025-07-01T19:54:30.048Z",
+      "createdBy": "347fe6b4-4e24-498e-b858-7c1eab51918b",
+      "downloadCount": 0,
+      "description": "Enables natural language querying across your mapped digital systems and connections. Analyzes relationships, dependencies, and data flows to provide actionable insights about system performance, integration bottlenecks, and architectural patterns within your environment.",
+      "filePath": "templates/query-how-systems-are-integrated.json",
+      "version": "0.0.1"
+    },
+    {
+      "id": "01JYPS7J4M1X9476DPHKGSAZ14",
+      "name": "Domain Attributes Builder",
+      "createdAt": "2025-07-01T19:52:36.592Z",
+      "updatedAt": "2025-07-01T19:52:36.592Z",
+      "createdBy": "347fe6b4-4e24-498e-b858-7c1eab51918b",
+      "downloadCount": 0,
+      "description": "Takes context as input along with entity information (Core Entities, Systems) and extends the domain by identifying and mapping data structures.",
+      "filePath": "templates/profiles-builder.json",
+      "version": "0.0.3"
+    },
+    {
+      "id": "01JYP6R1V0N4SFDWRQDY8FRRTH",
+      "name": "Initialize Workspace",
+      "createdAt": "2025-07-01T11:29:48.924Z",
+      "updatedAt": "2025-07-01T11:29:48.924Z",
+      "createdBy": "347fe6b4-4e24-498e-b858-7c1eab51918b",
+      "downloadCount": 0,
+      "description": "Discovers and maps your digital environment by creating entities, processes, and systems along with their interconnections. Generates business-specific attributes and metadata tailored to your organizational context, establishing a foundational knowledge graph for downstream automation and analysis.",
+      "filePath": "templates/initialize-workspace.json",
+      "version": "0.0.1"
     }
-  },
-  "metadata": {
-    "outputFormats": ["pdf", "docx", "html"],
-    "estimatedCompletionTime": "2 hours",
-    "requiredRoles": ["analyst", "manager"]
-  }
+  ]
 }
 ```
 
 ---
 
-## 🔍 Browse by Category
+## 🤝 Contributing Technical Templates
 
-### Meta-Graphs
-- 🔄 **[Workflows](artifacts/meta-graphs/workflows/)** - Business process automation
-- 🤖 **[Agents](artifacts/meta-graphs/agents/)** - AI agent configurations  
-- 🔧 **[Pipelines](artifacts/meta-graphs/pipelines/)** - Data and deployment pipelines
+### Publishing Process
+1. **Develop your agent** within the platform's technical workspace
+2. **Test with real systems** using your organizational infrastructure
+3. **Validate analysis accuracy** against known system metrics
+4. **Publish through platform** using the integrated template publisher
+5. **Peer review** by technical community ensures quality and accuracy
 
-### Dashboards
-- 📈 **[Analytics](artifacts/dashboards/analytics/)** - Business intelligence dashboards
-- 📊 **[Monitoring](artifacts/dashboards/monitoring/)** - System health dashboards
-- 👔 **[Executive](artifacts/dashboards/executive/)** - Leadership overview dashboards
+### Template Standards
+- Templates must integrate with **platform's system analysis engine**
+- Include **technical validation** and accuracy benchmarks
+- Follow **architectural best practices** and security standards
+- Provide **realistic setup estimates** for enterprise environments
 
-### Documents
-- 📄 **[Reports](artifacts/documents/reports/)** - Business and technical reports
-- 📋 **[Forms](artifacts/documents/forms/)** - Data collection templates
-- ⚙️ **[Configs](artifacts/documents/configs/)** - Configuration templates
-
----
-
-## 🤝 Contributing
-
-We welcome contributions from the community! Here's how you can help:
-
-### 🎯 Ways to Contribute
-- **Submit new artifacts** - Share your templates with the community
-- **Improve existing artifacts** - Enhance functionality or fix issues
-- **Update documentation** - Help others understand and use artifacts
-- **Report issues** - Help us identify problems and improvements
-- **Review submissions** - Help maintain quality standards
-
-### 📋 Contribution Guidelines
-1. **Follow our [schema guidelines](docs/artifact-schemas.md)**
-2. **Test your artifacts** before submission
-3. **Provide clear documentation** and examples
-4. **Use semantic versioning** for updates
-5. **Include appropriate tags** and categories
-
-### 🔄 Submission Process
-1. Fork this repository
-2. Create a new branch: `git checkout -b feature/my-new-artifact`
-3. Add your artifact to the appropriate category folder
-4. Update the relevant manifest file
-5. Add examples and documentation
-6. Submit a pull request with a clear description
+**Note**: All technical templates are published through the platform interface to ensure system compatibility, security compliance, and access to specialized analysis infrastructure.
 
 ---
 
-## 📊 Statistics
+## 🏷️ Technical Categories
 
-- **Total Artifacts**: 150+
-- **Categories**: 9
-- **Contributors**: 45+
-- **Downloads**: 25,000+
-- **Last Updated**: June 2025
+- `system-analysis` `architecture-review` `performance-optimization` `security-assessment`
+- `database-analysis` `infrastructure-monitoring` `code-quality` `technical-debt`
 
 ---
 
-## 🛠️ API Access
+## 📚 Technical Resources
 
-### REST API Endpoints
-```
-GET /api/v1/master                    # Get all artifact types
-GET /api/v1/{type}                    # List artifacts by type
-GET /api/v1/{type}/{id}               # Get specific artifact
-GET /api/v1/{type}/{id}/download      # Download artifact
-GET /api/v1/search?q={query}          # Search across all types
-GET /api/v1/categories                # Get all categories
-GET /api/v1/stats                     # Platform statistics
-```
-
-### Example API Usage
-```javascript
-// Fetch all workflow templates
-const workflows = await fetch('/api/v1/meta-graphs?subtype=workflows');
-
-// Search for customer-related artifacts
-const results = await fetch('/api/v1/search?q=customer&type=all');
-
-// Download specific dashboard
-const dashboard = await fetch('/api/v1/dashboards/sales-analytics-v1.3/download');
-```
-
----
-
-## 📚 Documentation
-
-- **[Getting Started](docs/getting-started.md)** - Basic usage and setup
-- **[Artifact Schemas](docs/artifact-schemas.md)** - Detailed schema documentation
-- **[API Reference](docs/api-reference.md)** - Complete API documentation
-- **[Contributing Guide](docs/contributing.md)** - How to contribute
-- **[Best Practices](docs/best-practices.md)** - Guidelines for quality artifacts
-
----
-
-## 🏷️ Popular Tags
-
-`workflows` `automation` `analytics` `dashboards` `reports` `ai-agents` `data-processing` `monitoring` `business-intelligence` `templates`
+- **System Integration Guide**: Platform API and system connectivity
+- **Agent Development Kit**: Tools for building custom analysis agents  
+- **Architecture Patterns**: Template library for common system designs
+- **Analysis Methodologies**: Best practices for system evaluation
 
 ---
 
 ## 📄 License
 
-This repository is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
-
-Individual artifacts may have their own licenses as specified in their metadata.
-
----
-
-## 🙋‍♀️ Support
-
-- **Issues**: [GitHub Issues](https://github.com/yourusername/artifact-hub/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/yourusername/artifact-hub/discussions)
-- **Documentation**: [docs/](docs/)
-- **Email**: support@yourdomain.com
+Repository infrastructure: **MIT License**  
+Individual templates: **Platform-Restricted License** - Templates are freely downloadable for study and modification but require our platform's specialized analysis infrastructure and system integration capabilities for execution.
 
 ---
 
-## 🌟 Star History
+## 💡 Why Platform-Exclusive?
 
-[![Star History Chart](https://api.star-history.com/svg?repos=yourusername/artifact-hub&type=Date)](https://star-history.com/#yourusername/artifact-hub&Date)
+Our technical templates require:
+- **Deep system integration** with code repositories, databases, and infrastructure
+- **Specialized analysis engines** for accurate architectural assessment
+- **Enterprise security context** for safe system access and evaluation
+- **Real-time system connectivity** that adapts to your specific technology stack
+- **Advanced pattern recognition** built into our platform's AI infrastructure
 
 ---
 
-**Made with ❤️ by the community**
+**Ready to accelerate your system analysis and architecture intelligence? Deploy our technical agents today! 🔧**
