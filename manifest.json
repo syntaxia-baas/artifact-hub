@@ -1,7 +1,18 @@
 {
-  "lastUpdated": "2025-07-24T20:49:37.905Z",
-  "totalTemplates": 10,
+  "lastUpdated": "2025-07-24T20:49:45.210Z",
+  "totalTemplates": 11,
   "graphs": [
+    {
+      "id": "01K0YG5V016YKXW77793Q8CX3X",
+      "name": "Architecture Analysis Agent",
+      "createdAt": "2025-07-24T20:49:44.175Z",
+      "updatedAt": "2025-07-24T20:49:44.175Z",
+      "createdBy": "347fe6b4-4e24-498e-b858-7c1eab51918b",
+      "downloadCount": 0,
+      "description": "Analyzes system architecture for complexity, dependencies, technical debt, and optimization opportunities. Maps architectural decisions to business outcomes and team productivity.",
+      "filePath": "templates/architecture-analysis-agent.json",
+      "version": "1.0.3"
+    },
     {
       "id": "01K0YG3MMXX2YMH3Q06DX2HJ3R",
       "name": "System Log Monitor Agent",
