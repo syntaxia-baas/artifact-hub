@@ -1,0 +1,177 @@
+{
+  "id": "01K0SP0AHYJ9EFV9TH1XG2E56R",
+  "definition": {
+    "name": "Connections Mapper",
+    "slug": "connections-mapper",
+    "description": "Interactive process that discovers, validates, and creates connections between systems through dependency analysis and data flow identification",
+    "conversationStarter": "🔗 How do your systems communicate?\n\nDescribe the key data flows and dependencies between \nyour systems - which ones call each other?",
+    "version": "1.0.15",
+    "icon": "Waypoints",
+    "capabilities": [],
+    "examples": [],
+    "tags": [
+      "data-analysis"
+    ],
+    "artifactParams": {
+      "type": "WorkspaceArtifactParams",
+      "domainGroupIds": [],
+      "systemIds": [],
+      "connectionIds": []
+    },
+    "groupId": "cg-org-g-s922vrvzzt-wsp-o-hd7js5i4cd",
+    "metaGraphType": "connection",
+    "artifactId": null,
+    "hydrationStatus": "empty",
+    "orgCode": "org-g-s922vrvzzt",
+    "errorCount": 5,
+    "nodeCount": 6
+  },
+  "detail": {
+    "id": "01K0SP0BDJ72G0PHP8WHZ5CDX8",
+    "metaGraphDefinitionId": "01K0SP0AHYJ9EFV9TH1XG2E56R",
+    "nodes": [
+      {
+        "nodePath": "system/__start__",
+        "nodeInstanceName": "__start__",
+        "displayName": "__start__",
+        "description": "Starting point of the workflow",
+        "kind": "start",
+        "capabilities": [
+          "workflow:start"
+        ],
+        "style": {
+          "position": {
+            "x": 480,
+            "y": -450
+          }
+        },
+        "fieldMappings": []
+      },
+      {
+        "nodePath": "system/__end__",
+        "nodeInstanceName": "__end__",
+        "displayName": "__end__",
+        "description": "Ending point of the workflow",
+        "kind": "end",
+        "capabilities": [
+          "workflow:end"
+        ],
+        "style": {
+          "position": {
+            "x": 480,
+            "y": 315
+          }
+        },
+        "fieldMappings": []
+      },
+      {
+        "nodePath": "artifacts/system/discover-connections",
+        "nodeInstanceName": "node_1753353148100",
+        "displayName": "discover-connections",
+        "description": "Node for discovering connections between systems",
+        "kind": "tool-call",
+        "capabilities": [],
+        "style": {
+          "position": {
+            "x": 450,
+            "y": -195
+          }
+        },
+        "fieldMappings": []
+      },
+      {
+        "nodePath": "artifacts/connection/create-with-human-in-loop",
+        "nodeInstanceName": "node_1753353572108",
+        "displayName": "Persist Connections",
+        "description": "Creates multiple Connection in a single batch operation, returning a list of entity containers for the created entities",
+        "kind": "human-in-loop",
+        "capabilities": [
+          "BATCH_CREATE",
+          "HUMAN_IN_LOOP"
+        ],
+        "style": {
+          "position": {
+            "x": 450,
+            "y": -30
+          }
+        },
+        "fieldMappings": []
+      },
+      {
+        "nodePath": "artifacts/system/attributes-persist",
+        "nodeInstanceName": "node_1753385500893",
+        "displayName": "attributes-persist",
+        "description": "Node for persisting both data and respective schemas for core entities",
+        "kind": "tool-call",
+        "capabilities": [],
+        "style": {
+          "position": {
+            "x": 450,
+            "y": 165
+          }
+        },
+        "fieldMappings": []
+      },
+      {
+        "nodePath": "artifacts/workspace/context-builder",
+        "nodeInstanceName": "node_1753388601961",
+        "displayName": "context-builder",
+        "description": "Node for building context for selected context path",
+        "kind": "tool-call",
+        "capabilities": [],
+        "style": {
+          "position": {
+            "x": 450,
+            "y": -360
+          }
+        },
+        "fieldMappings": []
+      }
+    ],
+    "edges": [
+      {
+        "id": "edge_1753353583446",
+        "from": "node_1753353148100",
+        "to": "node_1753353572108"
+      },
+      {
+        "id": "edge_1753353589415",
+        "from": "node_1753353572108",
+        "to": "node_1753385500893"
+      },
+      {
+        "id": "edge_1753353594127",
+        "from": "__start__",
+        "to": "node_1753388601961"
+      },
+      {
+        "id": "edge_1753385516286",
+        "from": "node_1753385500893",
+        "to": "__end__"
+      },
+      {
+        "id": "edge_1753388621074",
+        "from": "node_1753388601961",
+        "to": "node_1753353148100"
+      }
+    ],
+    "annotations": [],
+    "conditionalEdges": [],
+    "executionConfig": null,
+    "status": null,
+    "orgCode": "org-g-s922vrvzzt",
+    "styles": {
+      "orientation": "vertical",
+      "edgeType": "default"
+    }
+  },
+  "license": "Mit",
+  "metadata": {
+    "downloadCount": 0
+  },
+  "disable": false,
+  "createdAt": "2025-07-24T20:48:55.940Z",
+  "updatedAt": "2025-07-24T20:48:55.940Z",
+  "createdBy": "347fe6b4-4e24-498e-b858-7c1eab51918b",
+  "updatedBy": "347fe6b4-4e24-498e-b858-7c1eab51918b"
+}
