@@ -1,0 +1,201 @@
+{
+  "id": "01K0SN50K41RNWA1GM3VTC1GRS",
+  "definition": {
+    "name": "Incremental System Discovery",
+    "slug": "incremental-system-discovery",
+    "description": "Conversational flow that identifies and integrates new systems into existing workspace architecture through targeted questioning and dependency analysis.",
+    "conversationStarter": "🔍 What systems are missing from your architecture?\n\nTell me about any external APIs, internal tools, databases, \nor infrastructure that connects to your existing systems.",
+    "version": "1.0.22",
+    "icon": "SquaresUnite",
+    "capabilities": [],
+    "examples": [],
+    "tags": [
+      "enterprise",
+      "startups"
+    ],
+    "artifactParams": {
+      "type": "WorkspaceArtifactParams",
+      "domainGroupIds": [],
+      "systemIds": [],
+      "connectionIds": []
+    },
+    "groupId": "cg-org-g-s922vrvzzt-wsp-o-hd7js5i4cd",
+    "metaGraphType": "system",
+    "artifactId": null,
+    "hydrationStatus": "empty",
+    "orgCode": "org-g-s922vrvzzt",
+    "errorCount": 5,
+    "nodeCount": 7
+  },
+  "detail": {
+    "id": "01K0SN5D6H97VMKM2YTMZZFVQA",
+    "metaGraphDefinitionId": "01K0SN50K41RNWA1GM3VTC1GRS",
+    "nodes": [
+      {
+        "nodePath": "system/__start__",
+        "nodeInstanceName": "__start__",
+        "displayName": "__start__",
+        "description": "Starting point of the workflow",
+        "kind": "start",
+        "capabilities": [
+          "workflow:start"
+        ],
+        "style": {
+          "position": {
+            "x": 225,
+            "y": -555
+          }
+        },
+        "fieldMappings": []
+      },
+      {
+        "nodePath": "system/__end__",
+        "nodeInstanceName": "__end__",
+        "displayName": "__end__",
+        "description": "Ending point of the workflow",
+        "kind": "end",
+        "capabilities": [
+          "workflow:end"
+        ],
+        "style": {
+          "position": {
+            "x": 240,
+            "y": 390
+          }
+        },
+        "fieldMappings": []
+      },
+      {
+        "nodePath": "artifacts/system/discover-systems",
+        "nodeInstanceName": "node_1753352584146",
+        "displayName": "discover-systems",
+        "description": "Node for discovering new systems and integrating them into existing workspace architecture",
+        "kind": "tool-call",
+        "capabilities": [],
+        "style": {
+          "position": {
+            "x": 195,
+            "y": -120
+          }
+        },
+        "fieldMappings": []
+      },
+      {
+        "nodePath": "artifacts/domain_entity/create-with-human-in-loop",
+        "nodeInstanceName": "node_1753353044079",
+        "displayName": "Persist systems",
+        "description": "Creates multiple DomainEntity in a single batch operation, returning a list of entity containers for the created entities",
+        "kind": "human-in-loop",
+        "capabilities": [
+          "BATCH_CREATE",
+          "HUMAN_IN_LOOP"
+        ],
+        "style": {
+          "position": {
+            "x": 195,
+            "y": 45
+          }
+        },
+        "fieldMappings": []
+      },
+      {
+        "nodePath": "artifacts/system/attributes-persist",
+        "nodeInstanceName": "node_1753385220189",
+        "displayName": "attributes-persist",
+        "description": "Node for persisting both data and respective schemas for core entities",
+        "kind": "tool-call",
+        "capabilities": [],
+        "style": {
+          "position": {
+            "x": 195,
+            "y": 240
+          }
+        },
+        "fieldMappings": []
+      },
+      {
+        "nodePath": "artifacts/workspace/context-builder",
+        "nodeInstanceName": "node_1753388680439",
+        "displayName": "context-builder",
+        "description": "Node for building context for selected context path",
+        "kind": "tool-call",
+        "capabilities": [],
+        "style": {
+          "position": {
+            "x": 195,
+            "y": -465
+          }
+        },
+        "fieldMappings": []
+      },
+      {
+        "nodePath": "artifacts/domain_group/create-with-human-in-loop",
+        "nodeInstanceName": "node_1753389758522",
+        "displayName": "Persist domain groups",
+        "description": "Creates multiple DomainGroup in a single batch operation, returning a list of entity containers for the created entities",
+        "kind": "human-in-loop",
+        "capabilities": [
+          "BATCH_CREATE",
+          "HUMAN_IN_LOOP"
+        ],
+        "style": {
+          "position": {
+            "x": 195,
+            "y": -315
+          }
+        },
+        "fieldMappings": []
+      }
+    ],
+    "edges": [
+      {
+        "id": "edge_1753353062800",
+        "from": "__start__",
+        "to": "node_1753388680439"
+      },
+      {
+        "id": "edge_1753353077620",
+        "from": "node_1753353044079",
+        "to": "node_1753385220189"
+      },
+      {
+        "id": "edge_1753385146393",
+        "from": "node_1753352584146",
+        "to": "node_1753353044079"
+      },
+      {
+        "id": "edge_1753385239236",
+        "from": "node_1753385220189",
+        "to": "__end__"
+      },
+      {
+        "id": "edge_1753388698948",
+        "from": "node_1753388680439",
+        "to": "node_1753389758522"
+      },
+      {
+        "id": "edge_1753389812249",
+        "from": "node_1753389758522",
+        "to": "node_1753352584146"
+      }
+    ],
+    "annotations": [],
+    "conditionalEdges": [],
+    "executionConfig": null,
+    "status": null,
+    "orgCode": "org-g-s922vrvzzt",
+    "styles": {
+      "orientation": "vertical",
+      "edgeType": "default"
+    }
+  },
+  "license": "Mit",
+  "metadata": {
+    "downloadCount": 0
+  },
+  "disable": false,
+  "createdAt": "2025-07-24T20:48:46.029Z",
+  "updatedAt": "2025-07-24T20:48:46.029Z",
+  "createdBy": "347fe6b4-4e24-498e-b858-7c1eab51918b",
+  "updatedBy": "347fe6b4-4e24-498e-b858-7c1eab51918b"
+}
