@@ -1,0 +1,84 @@
+{
+  "id": "01K0YG3MMXX2YMH3Q06DX2HJ3R",
+  "definition": {
+    "name": "System Log Monitor Agent",
+    "slug": "system-log-monitor-agent",
+    "description": "Monitors system logs, error patterns, and performance metrics to identify issues, trends, and optimization opportunities. Maps incidents to system dependencies and business impact.",
+    "conversationStarter": "📊 Let's monitor your system intelligence!\n\nConnect your logging service (Sentry, DataDog, etc.) or describe your \nmonitoring setup. I'll analyze patterns, map incidents to system \ndependencies, and track how issues propagate through your architecture.",
+    "version": "1.0.2",
+    "icon": "Activity",
+    "capabilities": [],
+    "examples": [],
+    "tags": [],
+    "artifactParams": {
+      "type": "WorkspaceArtifactParams",
+      "domainGroupIds": [],
+      "systemIds": [],
+      "connectionIds": []
+    },
+    "groupId": "cg-org-g-s922vrvzzt-wsp-o-hd7js5i4cd",
+    "metaGraphType": "intelligence",
+    "artifactId": null,
+    "hydrationStatus": "empty",
+    "orgCode": "org-g-s922vrvzzt",
+    "errorCount": 1,
+    "nodeCount": 2
+  },
+  "detail": {
+    "id": "01K0YG3NJ76W59QNY64A4MCZNV",
+    "metaGraphDefinitionId": "01K0YG3MMXX2YMH3Q06DX2HJ3R",
+    "nodes": [
+      {
+        "nodePath": "system/__start__",
+        "nodeInstanceName": "__start__",
+        "displayName": "__start__",
+        "description": "Starting point of the workflow",
+        "kind": "start",
+        "capabilities": [
+          "workflow:start"
+        ],
+        "fieldMappings": []
+      },
+      {
+        "nodePath": "system/__end__",
+        "nodeInstanceName": "__end__",
+        "displayName": "__end__",
+        "description": "Ending point of the workflow",
+        "kind": "end",
+        "capabilities": [
+          "workflow:end"
+        ],
+        "style": {
+          "position": {
+            "x": 195,
+            "y": 105
+          }
+        },
+        "fieldMappings": []
+      }
+    ],
+    "edges": [
+      {
+        "id": "__start__-to-__end__",
+        "from": "__start__",
+        "to": "__end__",
+        "description": ""
+      }
+    ],
+    "annotations": [],
+    "conditionalEdges": [],
+    "executionConfig": null,
+    "status": null,
+    "orgCode": "org-g-s922vrvzzt",
+    "styles": null
+  },
+  "license": "Mit",
+  "metadata": {
+    "downloadCount": 0
+  },
+  "disable": false,
+  "createdAt": "2025-07-24T20:49:36.850Z",
+  "updatedAt": "2025-07-24T20:49:36.850Z",
+  "createdBy": "347fe6b4-4e24-498e-b858-7c1eab51918b",
+  "updatedBy": "347fe6b4-4e24-498e-b858-7c1eab51918b"
+}
