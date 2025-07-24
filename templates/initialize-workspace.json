@@ -5,7 +5,7 @@
     "slug": "initialize-workspace",
     "description": "discovers and maps your digital environment by creating entities, processes, and systems along with their interconnections. Generates business-specific attributes and metadata tailored to your organizational context, establishing a foundational knowledge graph for downstream automation and analysis",
     "conversationStarter": "What you want to build?",
-    "version": "0.0.1",
+    "version": "0.0.10",
     "icon": "Grid2x2",
     "capabilities": [],
     "examples": [],
@@ -15,10 +15,12 @@
       "workspaceCode": "wsp-o-hd7js5i4cd"
     },
     "groupId": "cg-org-g-s922vrvzzt-wsp-o-hd7js5i4cd",
-    "artifactType": "workspace_system",
+    "metaGraphType": "workspace",
     "artifactId": null,
     "hydrationStatus": "new",
-    "orgCode": "org-g-s922vrvzzt"
+    "orgCode": "org-g-s922vrvzzt",
+    "errorCount": 0,
+    "nodeCount": 18
   },
   "detail": {
     "id": "01JYP6R2WGG17ZSRFFNB8BW7F9",
@@ -33,6 +35,12 @@
         "capabilities": [
           "workflow:start"
         ],
+        "style": {
+          "position": {
+            "x": 90,
+            "y": -15
+          }
+        },
         "fieldMappings": []
       },
       {
@@ -44,10 +52,16 @@
         "capabilities": [
           "workflow:end"
         ],
+        "style": {
+          "position": {
+            "x": 1245,
+            "y": 1005
+          }
+        },
         "fieldMappings": []
       },
       {
-        "nodePath": "artifacts/workspace_system/init-workspace",
+        "nodePath": "artifacts/system/init-workspace",
         "nodeInstanceName": "node_1750960852907",
         "displayName": "init-workspace",
         "description": "",
@@ -84,6 +98,12 @@
           "BATCH_CREATE",
           "HUMAN_IN_LOOP"
         ],
+        "style": {
+          "position": {
+            "x": 450,
+            "y": 255
+          }
+        },
         "fieldMappings": [
           {
             "targetField": "entities",
@@ -94,7 +114,7 @@
         ]
       },
       {
-        "nodePath": "artifacts/workspace_system/create-with-human-in-loop",
+        "nodePath": "artifacts/system/create-with-human-in-loop",
         "nodeInstanceName": "node_1750961662247",
         "displayName": "Persist systems",
         "description": "Creates multiple WorkspaceSystemEntity in a single batch operation, returning a list of entity containers for the created entities",
@@ -103,6 +123,12 @@
           "BATCH_CREATE",
           "HUMAN_IN_LOOP"
         ],
+        "style": {
+          "position": {
+            "x": 450,
+            "y": 495
+          }
+        },
         "fieldMappings": [
           {
             "targetField": "entities",
@@ -122,6 +148,12 @@
           "BATCH_CREATE",
           "HUMAN_IN_LOOP"
         ],
+        "style": {
+          "position": {
+            "x": 450,
+            "y": 690
+          }
+        },
         "fieldMappings": [
           {
             "targetField": "entities",
@@ -141,6 +173,12 @@
           "BATCH_CREATE",
           "HUMAN_IN_LOOP"
         ],
+        "style": {
+          "position": {
+            "x": 450,
+            "y": 885
+          }
+        },
         "fieldMappings": [
           {
             "targetField": "entities",
@@ -151,12 +189,18 @@
         ]
       },
       {
-        "nodePath": "artifacts/workspace_system/attributes-builder",
+        "nodePath": "artifacts/system/attributes-builder",
         "nodeInstanceName": "node_1751050786936",
         "displayName": "Domain models artifacts-builder",
         "description": "Node for extracting attributes data from entity information",
         "kind": "tool-call",
         "capabilities": [],
+        "style": {
+          "position": {
+            "x": 810,
+            "y": 45
+          }
+        },
         "fieldMappings": [
           {
             "targetField": "profileRequirements",
@@ -171,12 +215,18 @@
         ]
       },
       {
-        "nodePath": "artifacts/workspace_system/attributes-persist",
+        "nodePath": "artifacts/system/attributes-persist",
         "nodeInstanceName": "node_1751050790359",
         "displayName": "attributes-persist",
         "description": "Node for persisting both data and respective schemas for core entities",
         "kind": "tool-call",
         "capabilities": [],
+        "style": {
+          "position": {
+            "x": 1065,
+            "y": 45
+          }
+        },
         "fieldMappings": [
           {
             "targetField": "coreArtifactType",
@@ -186,12 +236,18 @@
         ]
       },
       {
-        "nodePath": "artifacts/workspace_system/attributes-persist",
+        "nodePath": "artifacts/system/attributes-persist",
         "nodeInstanceName": "node_1751108717240",
         "displayName": "attributes-persist",
         "description": "Node for persisting both data and respective schemas for core entities",
         "kind": "tool-call",
         "capabilities": [],
+        "style": {
+          "position": {
+            "x": 1050,
+            "y": 270
+          }
+        },
         "fieldMappings": [
           {
             "targetField": "coreArtifactType",
@@ -201,12 +257,18 @@
         ]
       },
       {
-        "nodePath": "artifacts/workspace_system/attributes-builder",
+        "nodePath": "artifacts/system/attributes-builder",
         "nodeInstanceName": "node_1751108787695",
         "displayName": "attributes-builder",
         "description": "Node for extracting attributes data from entity information",
         "kind": "tool-call",
         "capabilities": [],
+        "style": {
+          "position": {
+            "x": 810,
+            "y": 270
+          }
+        },
         "fieldMappings": [
           {
             "targetField": "profileRequirements",
@@ -221,12 +283,18 @@
         ]
       },
       {
-        "nodePath": "artifacts/workspace_system/attributes-builder",
+        "nodePath": "artifacts/system/attributes-builder",
         "nodeInstanceName": "node_1751112852054",
         "displayName": "attributes-builder",
         "description": "Node for extracting attributes data from entity information",
         "kind": "tool-call",
         "capabilities": [],
+        "style": {
+          "position": {
+            "x": 825,
+            "y": 510
+          }
+        },
         "fieldMappings": [
           {
             "targetField": "profileRequirements",
@@ -236,32 +304,44 @@
           {
             "targetField": "coreArtifactType",
             "transformType": "template",
-            "transformation": "{{value:workspace_system}}"
+            "transformation": "{{value:system}}"
           }
         ]
       },
       {
-        "nodePath": "artifacts/workspace_system/attributes-persist",
+        "nodePath": "artifacts/system/attributes-persist",
         "nodeInstanceName": "node_1751112862081",
         "displayName": "attributes-persist",
         "description": "Node for persisting both data and respective schemas for core entities",
         "kind": "tool-call",
         "capabilities": [],
+        "style": {
+          "position": {
+            "x": 1050,
+            "y": 510
+          }
+        },
         "fieldMappings": [
           {
             "targetField": "coreArtifactType",
             "transformType": "template",
-            "transformation": "{{value:workspace_system}}"
+            "transformation": "{{value:system}}"
           }
         ]
       },
       {
-        "nodePath": "artifacts/workspace_system/attributes-builder",
+        "nodePath": "artifacts/system/attributes-builder",
         "nodeInstanceName": "node_1751112936902",
         "displayName": "attributes-builder",
         "description": "Node for extracting attributes data from entity information",
         "kind": "tool-call",
         "capabilities": [],
+        "style": {
+          "position": {
+            "x": 825,
+            "y": 705
+          }
+        },
         "fieldMappings": [
           {
             "targetField": "profileRequirements",
@@ -276,12 +356,18 @@
         ]
       },
       {
-        "nodePath": "artifacts/workspace_system/attributes-persist",
+        "nodePath": "artifacts/system/attributes-persist",
         "nodeInstanceName": "node_1751112940517",
         "displayName": "attributes-persist",
         "description": "Node for persisting both data and respective schemas for core entities",
         "kind": "tool-call",
         "capabilities": [],
+        "style": {
+          "position": {
+            "x": 1050,
+            "y": 705
+          }
+        },
         "fieldMappings": [
           {
             "targetField": "coreArtifactType",
@@ -291,12 +377,18 @@
         ]
       },
       {
-        "nodePath": "artifacts/workspace_system/attributes-builder",
+        "nodePath": "artifacts/system/attributes-builder",
         "nodeInstanceName": "node_1751112983315",
         "displayName": "attributes-builder",
         "description": "Node for extracting attributes data from entity information",
         "kind": "tool-call",
         "capabilities": [],
+        "style": {
+          "position": {
+            "x": 825,
+            "y": 885
+          }
+        },
         "fieldMappings": [
           {
             "targetField": "profileRequirements",
@@ -311,12 +403,18 @@
         ]
       },
       {
-        "nodePath": "artifacts/workspace_system/attributes-persist",
+        "nodePath": "artifacts/system/attributes-persist",
         "nodeInstanceName": "node_1751112989831",
         "displayName": "attributes-persist",
         "description": "Node for persisting both data and respective schemas for core entities",
         "kind": "tool-call",
         "capabilities": [],
+        "style": {
+          "position": {
+            "x": 1050,
+            "y": 885
+          }
+        },
         "fieldMappings": [
           {
             "targetField": "coreArtifactType",
@@ -355,7 +453,8 @@
       {
         "id": "edge_1751050809626",
         "from": "node_1751050790359",
-        "to": "node_1750961654266"
+        "to": "node_1750961654266",
+        "edgeType": "validatedSmoothstep"
       },
       {
         "id": "edge-node_1750961486789-node_1751050786936",
@@ -370,12 +469,14 @@
       {
         "id": "edge_1751112625644",
         "from": "node_1751108787695",
-        "to": "node_1751108717240"
+        "to": "node_1751108717240",
+        "edgeType": "validatedSmoothstep"
       },
       {
         "id": "edge_1751112663097",
         "from": "node_1751108717240",
-        "to": "node_1750961662247"
+        "to": "node_1750961662247",
+        "edgeType": "validatedSmoothstep"
       },
       {
         "id": "edge_1751112707421",
@@ -390,7 +491,8 @@
       {
         "id": "edge_1751112922986",
         "from": "node_1751112862081",
-        "to": "node_1750961756539"
+        "to": "node_1750961756539",
+        "edgeType": "validatedSmoothstep"
       },
       {
         "id": "edge_1751112946184",
@@ -400,7 +502,8 @@
       {
         "id": "edge_1751112961329",
         "from": "node_1751112940517",
-        "to": "node_1750961930132"
+        "to": "node_1750961930132",
+        "edgeType": "validatedSmoothstep"
       },
       {
         "id": "edge_1751112995321",
@@ -413,18 +516,20 @@
         "to": "__end__"
       }
     ],
+    "annotations": [],
     "conditionalEdges": [],
     "executionConfig": null,
     "status": null,
-    "orgCode": "org-g-s922vrvzzt"
+    "orgCode": "org-g-s922vrvzzt",
+    "styles": null
   },
   "license": "Mit",
   "metadata": {
     "downloadCount": 0
   },
   "disable": false,
-  "createdAt": "2025-07-01T11:29:48.924Z",
-  "updatedAt": "2025-07-01T11:29:48.924Z",
+  "createdAt": "2025-07-24T20:46:30.470Z",
+  "updatedAt": "2025-07-24T20:46:30.470Z",
   "createdBy": "347fe6b4-4e24-498e-b858-7c1eab51918b",
   "updatedBy": "347fe6b4-4e24-498e-b858-7c1eab51918b"
 }
