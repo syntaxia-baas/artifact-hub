@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2025-07-24T20:49:12.492Z",
+  "lastUpdated": "2025-07-24T20:49:20.560Z",
   "totalTemplates": 9,
   "graphs": [
     {
       "id": "01K0YFQSTB3WCZ1AQTQQ6CVNBE",
       "name": "Decision Analysis Agent",
-      "createdAt": "2025-07-24T20:49:11.459Z",
-      "updatedAt": "2025-07-24T20:49:11.459Z",
+      "createdAt": "2025-07-24T20:49:19.609Z",
+      "updatedAt": "2025-07-24T20:49:19.609Z",
       "createdBy": "347fe6b4-4e24-498e-b858-7c1eab51918b",
       "downloadCount": 0,
       "description": "Evaluates build-versus-buy decisions by analyzing technical requirements, team capabilities, timeline constraints, and total cost of ownership. Maps decision impacts across your system architecture.",
