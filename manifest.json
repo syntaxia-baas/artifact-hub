@@ -1,7 +1,18 @@
 {
-  "lastUpdated": "2025-07-24T20:49:20.560Z",
-  "totalTemplates": 9,
+  "lastUpdated": "2025-07-24T20:49:37.905Z",
+  "totalTemplates": 10,
   "graphs": [
+    {
+      "id": "01K0YG3MMXX2YMH3Q06DX2HJ3R",
+      "name": "System Log Monitor Agent",
+      "createdAt": "2025-07-24T20:49:36.850Z",
+      "updatedAt": "2025-07-24T20:49:36.850Z",
+      "createdBy": "347fe6b4-4e24-498e-b858-7c1eab51918b",
+      "downloadCount": 0,
+      "description": "Monitors system logs, error patterns, and performance metrics to identify issues, trends, and optimization opportunities. Maps incidents to system dependencies and business impact.",
+      "filePath": "templates/system-log-monitor-agent.json",
+      "version": "1.0.2"
+    },
     {
       "id": "01K0YFQSTB3WCZ1AQTQQ6CVNBE",
       "name": "Decision Analysis Agent",
