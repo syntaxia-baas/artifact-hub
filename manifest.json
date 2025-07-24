@@ -1,7 +1,18 @@
 {
-  "lastUpdated": "2025-07-24T20:49:52.600Z",
-  "totalTemplates": 12,
+  "lastUpdated": "2025-07-24T20:50:00.232Z",
+  "totalTemplates": 13,
   "graphs": [
+    {
+      "id": "01K0YWAEEXH8QND8B51Y88Y4NH",
+      "name": "Enterprise AI Evolution Strategist",
+      "createdAt": "2025-07-24T20:49:59.213Z",
+      "updatedAt": "2025-07-24T20:49:59.213Z",
+      "createdBy": "347fe6b4-4e24-498e-b858-7c1eab51918b",
+      "downloadCount": 0,
+      "description": "Audits enterprise systems and processes to assess GenAI readiness, then provides comprehensive transformation roadmaps. Maps AI integration opportunities, agent deployment strategies, and system modernization paths to future-proof your organization.",
+      "filePath": "templates/enterprise-ai-evolution-strategist.json",
+      "version": "1.0.2"
+    },
     {
       "id": "01K0YG7X7HBGP89K6PQQSDKNMP",
       "name": " Communication Intelligence Extractor",
