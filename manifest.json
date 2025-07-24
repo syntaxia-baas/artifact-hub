@@ -1,7 +1,18 @@
 {
-  "lastUpdated": "2025-07-24T20:48:47.110Z",
-  "totalTemplates": 6,
+  "lastUpdated": "2025-07-24T20:48:57.030Z",
+  "totalTemplates": 7,
   "graphs": [
+    {
+      "id": "01K0SP0AHYJ9EFV9TH1XG2E56R",
+      "name": "Connections Mapper",
+      "createdAt": "2025-07-24T20:48:55.940Z",
+      "updatedAt": "2025-07-24T20:48:55.940Z",
+      "createdBy": "347fe6b4-4e24-498e-b858-7c1eab51918b",
+      "downloadCount": 0,
+      "description": "Interactive process that discovers, validates, and creates connections between systems through dependency analysis and data flow identification",
+      "filePath": "templates/connections-mapper.json",
+      "version": "1.0.15"
+    },
     {
       "id": "01K0SN50K41RNWA1GM3VTC1GRS",
       "name": "Incremental System Discovery",
