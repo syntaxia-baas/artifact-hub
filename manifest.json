@@ -1,7 +1,18 @@
 {
-  "lastUpdated": "2025-07-24T20:46:20.929Z",
+  "lastUpdated": "2025-07-24T20:46:31.485Z",
   "totalTemplates": 5,
   "graphs": [
+    {
+      "id": "01JYP6R1V0N4SFDWRQDY8FRRTH",
+      "name": "Initialize workspace",
+      "createdAt": "2025-07-24T20:46:30.470Z",
+      "updatedAt": "2025-07-24T20:46:30.470Z",
+      "createdBy": "347fe6b4-4e24-498e-b858-7c1eab51918b",
+      "downloadCount": 0,
+      "description": "discovers and maps your digital environment by creating entities, processes, and systems along with their interconnections. Generates business-specific attributes and metadata tailored to your organizational context, establishing a foundational knowledge graph for downstream automation and analysis",
+      "filePath": "templates/initialize-workspace.json",
+      "version": "0.0.10"
+    },
     {
       "id": "01JYPS7J4M1X9476DPHKGSAZ14",
       "name": "Domain Attributes builder",
@@ -45,17 +56,6 @@
       "description": "First graph to publish",
       "filePath": "templates/meta-graph-to-publish.json",
       "version": "0.0.3"
-    },
-    {
-      "id": "01JYP6R1V0N4SFDWRQDY8FRRTH",
-      "name": "Initialize workspace",
-      "createdAt": "2025-07-01T11:29:48.924Z",
-      "updatedAt": "2025-07-01T11:29:48.924Z",
-      "createdBy": "347fe6b4-4e24-498e-b858-7c1eab51918b",
-      "downloadCount": 0,
-      "description": "discovers and maps your digital environment by creating entities, processes, and systems along with their interconnections. Generates business-specific attributes and metadata tailored to your organizational context, establishing a foundational knowledge graph for downstream automation and analysis",
-      "filePath": "templates/initialize-workspace.json",
-      "version": "0.0.1"
     }
   ]
 }
