@@ -1,0 +1,89 @@
+{
+  "id": "01K0YWAEEXH8QND8B51Y88Y4NH",
+  "definition": {
+    "name": "Enterprise AI Evolution Strategist",
+    "slug": "enterprise-ai-evolution-strategist",
+    "description": "Audits enterprise systems and processes to assess GenAI readiness, then provides comprehensive transformation roadmaps. Maps AI integration opportunities, agent deployment strategies, and system modernization paths to future-proof your organization.",
+    "conversationStarter": "🧠 Let's future-proof your enterprise for the GenAI era!\n\nDescribe your current systems, data infrastructure, business processes, \nand team capabilities. Include your AI maturity level and strategic goals - \nI'll analyze your GenAI readiness and create a comprehensive transformation \nroadmap with specific agent opportunities for each system.",
+    "version": "1.0.2",
+    "icon": "Brain",
+    "capabilities": [],
+    "examples": [],
+    "tags": [
+      "startups",
+      "enterprise",
+      "agents",
+      "decision-support"
+    ],
+    "artifactParams": {
+      "type": "WorkspaceArtifactParams",
+      "domainGroupIds": [],
+      "systemIds": [],
+      "connectionIds": []
+    },
+    "groupId": "cg-org-g-s922vrvzzt-wsp-o-hd7js5i4cd",
+    "metaGraphType": "intelligence",
+    "artifactId": null,
+    "hydrationStatus": "empty",
+    "orgCode": "org-g-s922vrvzzt",
+    "errorCount": 1,
+    "nodeCount": 2
+  },
+  "detail": {
+    "id": "01K0YWAGK6CZ67YAMASV54A2YH",
+    "metaGraphDefinitionId": "01K0YWAEEXH8QND8B51Y88Y4NH",
+    "nodes": [
+      {
+        "nodePath": "system/__start__",
+        "nodeInstanceName": "__start__",
+        "displayName": "__start__",
+        "description": "Starting point of the workflow",
+        "kind": "start",
+        "capabilities": [
+          "workflow:start"
+        ],
+        "fieldMappings": []
+      },
+      {
+        "nodePath": "system/__end__",
+        "nodeInstanceName": "__end__",
+        "displayName": "__end__",
+        "description": "Ending point of the workflow",
+        "kind": "end",
+        "capabilities": [
+          "workflow:end"
+        ],
+        "style": {
+          "position": {
+            "x": 195,
+            "y": 45
+          }
+        },
+        "fieldMappings": []
+      }
+    ],
+    "edges": [
+      {
+        "id": "__start__-to-__end__",
+        "from": "__start__",
+        "to": "__end__",
+        "description": ""
+      }
+    ],
+    "annotations": [],
+    "conditionalEdges": [],
+    "executionConfig": null,
+    "status": null,
+    "orgCode": "org-g-s922vrvzzt",
+    "styles": null
+  },
+  "license": "Mit",
+  "metadata": {
+    "downloadCount": 0
+  },
+  "disable": false,
+  "createdAt": "2025-07-24T20:49:59.213Z",
+  "updatedAt": "2025-07-24T20:49:59.213Z",
+  "createdBy": "347fe6b4-4e24-498e-b858-7c1eab51918b",
+  "updatedBy": "347fe6b4-4e24-498e-b858-7c1eab51918b"
+}
