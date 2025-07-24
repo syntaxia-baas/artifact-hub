@@ -1,0 +1,90 @@
+{
+  "id": "01K0YG5V016YKXW77793Q8CX3X",
+  "definition": {
+    "name": "Architecture Analysis Agent",
+    "slug": "architecture-analysis-agent",
+    "description": "Analyzes system architecture for complexity, dependencies, technical debt, and optimization opportunities. Maps architectural decisions to business outcomes and team productivity.",
+    "conversationStarter": "🏗️ Let's analyze your architecture intelligence!\n\nDescribe your system architecture, technology stack, and current \nchallenges. Include deployment patterns and team structure - I'll \nmap complexity, dependencies, and optimization opportunities.",
+    "version": "1.0.3",
+    "icon": "Network",
+    "capabilities": [],
+    "examples": [],
+    "tags": [],
+    "artifactParams": {
+      "type": "WorkspaceArtifactParams",
+      "domainGroupIds": [],
+      "systemIds": [],
+      "connectionIds": []
+    },
+    "groupId": "cg-org-g-s922vrvzzt-wsp-o-hd7js5i4cd",
+    "metaGraphType": "intelligence",
+    "artifactId": null,
+    "hydrationStatus": "empty",
+    "orgCode": "org-g-s922vrvzzt",
+    "errorCount": 1,
+    "nodeCount": 2
+  },
+  "detail": {
+    "id": "01K0YG5VVY5GH9YSD1E8XXV3V9",
+    "metaGraphDefinitionId": "01K0YG5V016YKXW77793Q8CX3X",
+    "nodes": [
+      {
+        "nodePath": "system/__start__",
+        "nodeInstanceName": "__start__",
+        "displayName": "__start__",
+        "description": "Starting point of the workflow",
+        "kind": "start",
+        "capabilities": [
+          "workflow:start"
+        ],
+        "style": {
+          "position": {
+            "x": 30,
+            "y": -75
+          }
+        },
+        "fieldMappings": []
+      },
+      {
+        "nodePath": "system/__end__",
+        "nodeInstanceName": "__end__",
+        "displayName": "__end__",
+        "description": "Ending point of the workflow",
+        "kind": "end",
+        "capabilities": [
+          "workflow:end"
+        ],
+        "style": {
+          "position": {
+            "x": 165,
+            "y": 45
+          }
+        },
+        "fieldMappings": []
+      }
+    ],
+    "edges": [
+      {
+        "id": "__start__-to-__end__",
+        "from": "__start__",
+        "to": "__end__",
+        "description": ""
+      }
+    ],
+    "annotations": [],
+    "conditionalEdges": [],
+    "executionConfig": null,
+    "status": null,
+    "orgCode": "org-g-s922vrvzzt",
+    "styles": null
+  },
+  "license": "Mit",
+  "metadata": {
+    "downloadCount": 0
+  },
+  "disable": false,
+  "createdAt": "2025-07-24T20:49:44.175Z",
+  "updatedAt": "2025-07-24T20:49:44.175Z",
+  "createdBy": "347fe6b4-4e24-498e-b858-7c1eab51918b",
+  "updatedBy": "347fe6b4-4e24-498e-b858-7c1eab51918b"
+}
