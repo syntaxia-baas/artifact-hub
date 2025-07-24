@@ -1,0 +1,90 @@
+{
+  "id": "01K0YG7X7HBGP89K6PQQSDKNMP",
+  "definition": {
+    "name": " Communication Intelligence Extractor",
+    "slug": "communication-intelligence-extractor",
+    "description": "Monitors Slack conversations to extract key decisions, issues, and insights, then maps them to relevant systems and processes. Captures organizational knowledge from informal communications.",
+    "conversationStarter": "💬 Let's map your team communication intelligence!\n\nConnect your Slack workspace or describe key channels to monitor. \nI'll extract decisions, issues, and insights from conversations and \nmap them to your systems, processes, and team dynamics.",
+    "version": "1.0.4",
+    "icon": "MessageSquare",
+    "capabilities": [],
+    "examples": [],
+    "tags": [],
+    "artifactParams": {
+      "type": "WorkspaceArtifactParams",
+      "domainGroupIds": [],
+      "systemIds": [],
+      "connectionIds": []
+    },
+    "groupId": "cg-org-g-s922vrvzzt-wsp-o-hd7js5i4cd",
+    "metaGraphType": "intelligence",
+    "artifactId": null,
+    "hydrationStatus": "empty",
+    "orgCode": "org-g-s922vrvzzt",
+    "errorCount": 1,
+    "nodeCount": 2
+  },
+  "detail": {
+    "id": "01K0YG7Y4RD5WT8476GZKSD51C",
+    "metaGraphDefinitionId": "01K0YG7X7HBGP89K6PQQSDKNMP",
+    "nodes": [
+      {
+        "nodePath": "system/__start__",
+        "nodeInstanceName": "__start__",
+        "displayName": "__start__",
+        "description": "Starting point of the workflow",
+        "kind": "start",
+        "capabilities": [
+          "workflow:start"
+        ],
+        "style": {
+          "position": {
+            "x": -75,
+            "y": -75
+          }
+        },
+        "fieldMappings": []
+      },
+      {
+        "nodePath": "system/__end__",
+        "nodeInstanceName": "__end__",
+        "displayName": "__end__",
+        "description": "Ending point of the workflow",
+        "kind": "end",
+        "capabilities": [
+          "workflow:end"
+        ],
+        "style": {
+          "position": {
+            "x": 150,
+            "y": 30
+          }
+        },
+        "fieldMappings": []
+      }
+    ],
+    "edges": [
+      {
+        "id": "__start__-to-__end__",
+        "from": "__start__",
+        "to": "__end__",
+        "description": ""
+      }
+    ],
+    "annotations": [],
+    "conditionalEdges": [],
+    "executionConfig": null,
+    "status": null,
+    "orgCode": "org-g-s922vrvzzt",
+    "styles": null
+  },
+  "license": "Mit",
+  "metadata": {
+    "downloadCount": 0
+  },
+  "disable": false,
+  "createdAt": "2025-07-24T20:49:51.494Z",
+  "updatedAt": "2025-07-24T20:49:51.494Z",
+  "createdBy": "347fe6b4-4e24-498e-b858-7c1eab51918b",
+  "updatedBy": "347fe6b4-4e24-498e-b858-7c1eab51918b"
+}
