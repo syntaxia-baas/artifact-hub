@@ -1,7 +1,18 @@
 {
-  "lastUpdated": "2025-07-24T20:48:57.030Z",
-  "totalTemplates": 7,
+  "lastUpdated": "2025-07-24T20:49:04.257Z",
+  "totalTemplates": 8,
   "graphs": [
+    {
+      "id": "01K0YFMAYNDMBZWCJFDH1C1M31",
+      "name": "Market Research Agent",
+      "createdAt": "2025-07-24T20:49:03.177Z",
+      "updatedAt": "2025-07-24T20:49:03.177Z",
+      "createdBy": "347fe6b4-4e24-498e-b858-7c1eab51918b",
+      "downloadCount": 0,
+      "description": "Analyzes market landscapes, competitor positioning, and technology trends to identify opportunities and threats in your business domain. Maps market dynamics to your system architecture and business processes.",
+      "filePath": "templates/market-research-agent.json",
+      "version": "1.0.3"
+    },
     {
       "id": "01K0SP0AHYJ9EFV9TH1XG2E56R",
       "name": "Connections Mapper",
