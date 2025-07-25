@@ -5,7 +5,7 @@
     "slug": "system-log-monitor-agent",
     "description": "Monitors system logs, error patterns, and performance metrics to identify issues, trends, and optimization opportunities. Maps incidents to system dependencies and business impact.",
     "conversationStarter": "📊 Let's monitor your system intelligence!\n\nConnect your logging service (Sentry, DataDog, etc.) or describe your \nmonitoring setup. I'll analyze patterns, map incidents to system \ndependencies, and track how issues propagate through your architecture.",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "icon": "Activity",
     "capabilities": [],
     "examples": [],
@@ -21,8 +21,8 @@
     "artifactId": null,
     "hydrationStatus": "empty",
     "orgCode": "org-g-s922vrvzzt",
-    "errorCount": 1,
-    "nodeCount": 2
+    "errorCount": 0,
+    "nodeCount": 4
   },
   "detail": {
     "id": "01K0YG3NJ76W59QNY64A4MCZNV",
@@ -37,6 +37,12 @@
         "capabilities": [
           "workflow:start"
         ],
+        "style": {
+          "position": {
+            "x": 75,
+            "y": 45
+          }
+        },
         "fieldMappings": []
       },
       {
@@ -50,10 +56,28 @@
         ],
         "style": {
           "position": {
-            "x": 195,
-            "y": 105
+            "x": 75,
+            "y": 450
           }
         },
+        "fieldMappings": []
+      },
+      {
+        "nodePath": "artifacts/workspace/context-builder",
+        "nodeInstanceName": "node_1753473224429",
+        "displayName": "context-builder",
+        "description": "Node for building context for selected context path",
+        "kind": "tool-call",
+        "capabilities": [],
+        "fieldMappings": []
+      },
+      {
+        "nodePath": "artifacts/workspace/research-automation",
+        "nodeInstanceName": "node_1753473226259",
+        "displayName": "research-automation",
+        "description": "Node for automated research and analysis tasks with workspace context",
+        "kind": "tool-call",
+        "capabilities": [],
         "fieldMappings": []
       }
     ],
@@ -61,8 +85,17 @@
       {
         "id": "__start__-to-__end__",
         "from": "__start__",
-        "to": "__end__",
-        "description": ""
+        "to": "node_1753473224429"
+      },
+      {
+        "id": "edge_1753473243634",
+        "from": "node_1753473224429",
+        "to": "node_1753473226259"
+      },
+      {
+        "id": "edge_1753473246672",
+        "from": "node_1753473226259",
+        "to": "__end__"
       }
     ],
     "annotations": [],
@@ -70,15 +103,18 @@
     "executionConfig": null,
     "status": null,
     "orgCode": "org-g-s922vrvzzt",
-    "styles": null
+    "styles": {
+      "orientation": "vertical",
+      "edgeType": "default"
+    }
   },
   "license": "Mit",
   "metadata": {
     "downloadCount": 0
   },
   "disable": false,
-  "createdAt": "2025-07-24T20:49:36.850Z",
-  "updatedAt": "2025-07-24T20:49:36.850Z",
+  "createdAt": "2025-07-25T20:00:08.917Z",
+  "updatedAt": "2025-07-25T20:00:08.917Z",
   "createdBy": "347fe6b4-4e24-498e-b858-7c1eab51918b",
   "updatedBy": "347fe6b4-4e24-498e-b858-7c1eab51918b"
 }
