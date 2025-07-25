@@ -1,7 +1,18 @@
 {
-  "lastUpdated": "2025-07-25T19:59:31.852Z",
+  "lastUpdated": "2025-07-25T19:59:38.775Z",
   "totalTemplates": 13,
   "graphs": [
+    {
+      "id": "01K0SP0AHYJ9EFV9TH1XG2E56R",
+      "name": "Connections Mapper",
+      "createdAt": "2025-07-25T19:59:37.662Z",
+      "updatedAt": "2025-07-25T19:59:37.662Z",
+      "createdBy": "347fe6b4-4e24-498e-b858-7c1eab51918b",
+      "downloadCount": 0,
+      "description": "Interactive process that discovers, validates, and creates connections between systems through dependency analysis and data flow identification",
+      "filePath": "templates/connections-mapper.json",
+      "version": "1.0.18"
+    },
     {
       "id": "01K0SN50K41RNWA1GM3VTC1GRS",
       "name": "Incremental System Discovery",
@@ -100,17 +111,6 @@
       "description": "Analyzes market landscapes, competitor positioning, and technology trends to identify opportunities and threats in your business domain. Maps market dynamics to your system architecture and business processes.",
       "filePath": "templates/market-research-agent.json",
       "version": "1.0.3"
-    },
-    {
-      "id": "01K0SP0AHYJ9EFV9TH1XG2E56R",
-      "name": "Connections Mapper",
-      "createdAt": "2025-07-24T20:48:55.940Z",
-      "updatedAt": "2025-07-24T20:48:55.940Z",
-      "createdBy": "347fe6b4-4e24-498e-b858-7c1eab51918b",
-      "downloadCount": 0,
-      "description": "Interactive process that discovers, validates, and creates connections between systems through dependency analysis and data flow identification",
-      "filePath": "templates/connections-mapper.json",
-      "version": "1.0.15"
     },
     {
       "id": "01JYPDP8FKHCN5SSKFY05A85HX",
