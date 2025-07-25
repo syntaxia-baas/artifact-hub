@@ -1,17 +1,17 @@
 {
-  "lastUpdated": "2025-07-25T14:48:17.267Z",
+  "lastUpdated": "2025-07-25T19:59:14.308Z",
   "totalTemplates": 13,
   "graphs": [
     {
       "id": "01JYPS7J4M1X9476DPHKGSAZ14",
       "name": "Domain Attributes builder",
-      "createdAt": "2025-07-25T14:48:16.008Z",
-      "updatedAt": "2025-07-25T14:48:16.008Z",
+      "createdAt": "2025-07-25T19:59:13.246Z",
+      "updatedAt": "2025-07-25T19:59:13.246Z",
       "createdBy": "347fe6b4-4e24-498e-b858-7c1eab51918b",
       "downloadCount": 0,
       "description": "Takes context as input along with entity information (Core Entities, Systems) and extends the domain by identifying and mapping data structures.",
       "filePath": "templates/domain-attributes-builder.json",
-      "version": "0.0.11"
+      "version": "0.0.14"
     },
     {
       "id": "01K0SN50K41RNWA1GM3VTC1GRS",
