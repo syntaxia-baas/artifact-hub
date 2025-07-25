@@ -5,7 +5,7 @@
     "slug": "domain-attributes-builder",
     "description": "Takes context as input along with entity information (Core Entities, Systems) and extends the domain by identifying and mapping data structures.",
     "conversationStarter": "",
-    "version": "0.0.11",
+    "version": "0.0.14",
     "icon": "DiamondPlus",
     "capabilities": [],
     "examples": [],
@@ -21,7 +21,7 @@
     "artifactId": null,
     "hydrationStatus": "new",
     "orgCode": "org-g-s922vrvzzt",
-    "errorCount": 3,
+    "errorCount": 0,
     "nodeCount": 5
   },
   "detail": {
@@ -39,8 +39,8 @@
         ],
         "style": {
           "position": {
-            "x": 255,
-            "y": -210
+            "x": 270,
+            "y": -270
           }
         },
         "fieldMappings": []
@@ -56,38 +56,8 @@
         ],
         "style": {
           "position": {
-            "x": 255,
-            "y": 405
-          }
-        },
-        "fieldMappings": []
-      },
-      {
-        "nodePath": "artifacts/system/attributes-builder",
-        "nodeInstanceName": "node_1753385317727",
-        "displayName": "attributes-builder",
-        "description": "Node for extracting attributes data from entity information",
-        "kind": "tool-call",
-        "capabilities": [],
-        "style": {
-          "position": {
-            "x": 210,
-            "y": 60
-          }
-        },
-        "fieldMappings": []
-      },
-      {
-        "nodePath": "artifacts/system/attributes-persist",
-        "nodeInstanceName": "node_1753385331106",
-        "displayName": "attributes-persist",
-        "description": "Node for persisting both data and respective schemas for core entities",
-        "kind": "tool-call",
-        "capabilities": [],
-        "style": {
-          "position": {
-            "x": 210,
-            "y": 240
+            "x": 270,
+            "y": 330
           }
         },
         "fieldMappings": []
@@ -101,24 +71,49 @@
         "capabilities": [],
         "style": {
           "position": {
-            "x": 210,
-            "y": -135
+            "x": 225,
+            "y": -195
+          }
+        },
+        "fieldMappings": []
+      },
+      {
+        "nodePath": "artifacts/system/attributes-enhancer",
+        "nodeInstanceName": "node_1753454946198",
+        "displayName": "attributes-enhancer",
+        "description": "Node for extracting attributes from context summaries and user prompts",
+        "kind": "tool-call",
+        "capabilities": [],
+        "style": {
+          "position": {
+            "x": 225,
+            "y": -30
+          }
+        },
+        "fieldMappings": [
+          {
+            "targetField": "userPrompt",
+            "transformType": "workflow_input"
+          }
+        ]
+      },
+      {
+        "nodePath": "artifacts/system/attributes-persist",
+        "nodeInstanceName": "node_1753456764857",
+        "displayName": "attributes-persist",
+        "description": "Node for persisting both data and respective schemas for core entities",
+        "kind": "tool-call",
+        "capabilities": [],
+        "style": {
+          "position": {
+            "x": 240,
+            "y": 120
           }
         },
         "fieldMappings": []
       }
     ],
     "edges": [
-      {
-        "id": "edge_1753385339279",
-        "from": "node_1753385317727",
-        "to": "node_1753385331106"
-      },
-      {
-        "id": "edge_1753385346479",
-        "from": "node_1753385331106",
-        "to": "__end__"
-      },
       {
         "id": "edge_1753385351864",
         "from": "__start__",
@@ -127,7 +122,17 @@
       {
         "id": "edge_1753388565305",
         "from": "node_1753388552910",
-        "to": "node_1753385317727"
+        "to": "node_1753454946198"
+      },
+      {
+        "id": "edge_1753454961130",
+        "from": "node_1753454946198",
+        "to": "node_1753456764857"
+      },
+      {
+        "id": "edge_1753456777371",
+        "from": "node_1753456764857",
+        "to": "__end__"
       }
     ],
     "annotations": [],
@@ -145,8 +150,8 @@
     "downloadCount": 0
   },
   "disable": false,
-  "createdAt": "2025-07-25T14:48:16.008Z",
-  "updatedAt": "2025-07-25T14:48:16.008Z",
+  "createdAt": "2025-07-25T19:59:13.246Z",
+  "updatedAt": "2025-07-25T19:59:13.246Z",
   "createdBy": "347fe6b4-4e24-498e-b858-7c1eab51918b",
   "updatedBy": "347fe6b4-4e24-498e-b858-7c1eab51918b"
 }
