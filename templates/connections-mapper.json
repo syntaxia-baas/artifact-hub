@@ -5,7 +5,7 @@
     "slug": "connections-mapper",
     "description": "Interactive process that discovers, validates, and creates connections between systems through dependency analysis and data flow identification",
     "conversationStarter": "🔗 How do your systems communicate?\n\nDescribe the key data flows and dependencies between \nyour systems - which ones call each other?",
-    "version": "1.0.15",
+    "version": "1.0.18",
     "icon": "Waypoints",
     "capabilities": [],
     "examples": [],
@@ -23,8 +23,8 @@
     "artifactId": null,
     "hydrationStatus": "empty",
     "orgCode": "org-g-s922vrvzzt",
-    "errorCount": 5,
-    "nodeCount": 6
+    "errorCount": 0,
+    "nodeCount": 5
   },
   "detail": {
     "id": "01K0SP0BDJ72G0PHP8WHZ5CDX8",
@@ -58,8 +58,8 @@
         ],
         "style": {
           "position": {
-            "x": 480,
-            "y": 315
+            "x": 495,
+            "y": 165
           }
         },
         "fieldMappings": []
@@ -77,7 +77,12 @@
             "y": -195
           }
         },
-        "fieldMappings": []
+        "fieldMappings": [
+          {
+            "targetField": "userPrompt",
+            "transformType": "workflow_input"
+          }
+        ]
       },
       {
         "nodePath": "artifacts/connection/create-with-human-in-loop",
@@ -95,22 +100,14 @@
             "y": -30
           }
         },
-        "fieldMappings": []
-      },
-      {
-        "nodePath": "artifacts/system/attributes-persist",
-        "nodeInstanceName": "node_1753385500893",
-        "displayName": "attributes-persist",
-        "description": "Node for persisting both data and respective schemas for core entities",
-        "kind": "tool-call",
-        "capabilities": [],
-        "style": {
-          "position": {
-            "x": 450,
-            "y": 165
+        "fieldMappings": [
+          {
+            "targetField": "entities",
+            "sourceField": "connections",
+            "transformType": "function",
+            "transformation": "return value.map(v => v.entity);"
           }
-        },
-        "fieldMappings": []
+        ]
       },
       {
         "nodePath": "artifacts/workspace/context-builder",
@@ -135,24 +132,19 @@
         "to": "node_1753353572108"
       },
       {
-        "id": "edge_1753353589415",
-        "from": "node_1753353572108",
-        "to": "node_1753385500893"
-      },
-      {
         "id": "edge_1753353594127",
         "from": "__start__",
         "to": "node_1753388601961"
       },
       {
-        "id": "edge_1753385516286",
-        "from": "node_1753385500893",
-        "to": "__end__"
-      },
-      {
         "id": "edge_1753388621074",
         "from": "node_1753388601961",
         "to": "node_1753353148100"
+      },
+      {
+        "id": "edge_1753462435631",
+        "from": "node_1753353572108",
+        "to": "__end__"
       }
     ],
     "annotations": [],
@@ -170,8 +162,8 @@
     "downloadCount": 0
   },
   "disable": false,
-  "createdAt": "2025-07-24T20:48:55.940Z",
-  "updatedAt": "2025-07-24T20:48:55.940Z",
+  "createdAt": "2025-07-25T19:59:37.662Z",
+  "updatedAt": "2025-07-25T19:59:37.662Z",
   "createdBy": "347fe6b4-4e24-498e-b858-7c1eab51918b",
   "updatedBy": "347fe6b4-4e24-498e-b858-7c1eab51918b"
 }
