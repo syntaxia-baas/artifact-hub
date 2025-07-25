@@ -5,7 +5,7 @@
     "slug": "communication-intelligence-extractor",
     "description": "Monitors Slack conversations to extract key decisions, issues, and insights, then maps them to relevant systems and processes. Captures organizational knowledge from informal communications.",
     "conversationStarter": "💬 Let's map your team communication intelligence!\n\nConnect your Slack workspace or describe key channels to monitor. \nI'll extract decisions, issues, and insights from conversations and \nmap them to your systems, processes, and team dynamics.",
-    "version": "1.0.4",
+    "version": "1.0.6",
     "icon": "MessageSquare",
     "capabilities": [],
     "examples": [],
@@ -21,8 +21,8 @@
     "artifactId": null,
     "hydrationStatus": "empty",
     "orgCode": "org-g-s922vrvzzt",
-    "errorCount": 1,
-    "nodeCount": 2
+    "errorCount": 0,
+    "nodeCount": 4
   },
   "detail": {
     "id": "01K0YG7Y4RD5WT8476GZKSD51C",
@@ -39,8 +39,8 @@
         ],
         "style": {
           "position": {
-            "x": -75,
-            "y": -75
+            "x": 75,
+            "y": 45
           }
         },
         "fieldMappings": []
@@ -56,10 +56,34 @@
         ],
         "style": {
           "position": {
-            "x": 150,
-            "y": 30
+            "x": 75,
+            "y": 450
           }
         },
+        "fieldMappings": []
+      },
+      {
+        "nodePath": "artifacts/workspace/context-builder",
+        "nodeInstanceName": "node_1753473371633",
+        "displayName": "context-builder",
+        "description": "Node for building context for selected context path",
+        "kind": "tool-call",
+        "capabilities": [],
+        "style": {
+          "position": {
+            "x": 30,
+            "y": 150
+          }
+        },
+        "fieldMappings": []
+      },
+      {
+        "nodePath": "artifacts/workspace/research-automation",
+        "nodeInstanceName": "node_1753473373970",
+        "displayName": "research-automation",
+        "description": "Node for automated research and analysis tasks with workspace context",
+        "kind": "tool-call",
+        "capabilities": [],
         "fieldMappings": []
       }
     ],
@@ -67,8 +91,17 @@
       {
         "id": "__start__-to-__end__",
         "from": "__start__",
-        "to": "__end__",
-        "description": ""
+        "to": "node_1753473371633"
+      },
+      {
+        "id": "edge_1753473383788",
+        "from": "node_1753473371633",
+        "to": "node_1753473373970"
+      },
+      {
+        "id": "edge_1753473387544",
+        "from": "node_1753473373970",
+        "to": "__end__"
       }
     ],
     "annotations": [],
@@ -76,15 +109,18 @@
     "executionConfig": null,
     "status": null,
     "orgCode": "org-g-s922vrvzzt",
-    "styles": null
+    "styles": {
+      "orientation": "vertical",
+      "edgeType": "default"
+    }
   },
   "license": "Mit",
   "metadata": {
     "downloadCount": 0
   },
   "disable": false,
-  "createdAt": "2025-07-24T20:49:51.494Z",
-  "updatedAt": "2025-07-24T20:49:51.494Z",
+  "createdAt": "2025-07-25T20:00:39.609Z",
+  "updatedAt": "2025-07-25T20:00:39.609Z",
   "createdBy": "347fe6b4-4e24-498e-b858-7c1eab51918b",
   "updatedBy": "347fe6b4-4e24-498e-b858-7c1eab51918b"
 }
