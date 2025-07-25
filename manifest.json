@@ -1,7 +1,18 @@
 {
-  "lastUpdated": "2025-07-25T19:59:46.764Z",
+  "lastUpdated": "2025-07-25T19:59:54.276Z",
   "totalTemplates": 13,
   "graphs": [
+    {
+      "id": "01K0YFQSTB3WCZ1AQTQQ6CVNBE",
+      "name": "Decision Analysis Agent",
+      "createdAt": "2025-07-25T19:59:53.217Z",
+      "updatedAt": "2025-07-25T19:59:53.217Z",
+      "createdBy": "347fe6b4-4e24-498e-b858-7c1eab51918b",
+      "downloadCount": 0,
+      "description": "Evaluates build-versus-buy decisions by analyzing technical requirements, team capabilities, timeline constraints, and total cost of ownership. Maps decision impacts across your system architecture.",
+      "filePath": "templates/decision-analysis-agent.json",
+      "version": "1.0.4"
+    },
     {
       "id": "01K0YFMAYNDMBZWCJFDH1C1M31",
       "name": "Market Research Agent",
@@ -99,17 +110,6 @@
       "downloadCount": 0,
       "description": "Monitors system logs, error patterns, and performance metrics to identify issues, trends, and optimization opportunities. Maps incidents to system dependencies and business impact.",
       "filePath": "templates/system-log-monitor-agent.json",
-      "version": "1.0.2"
-    },
-    {
-      "id": "01K0YFQSTB3WCZ1AQTQQ6CVNBE",
-      "name": "Decision Analysis Agent",
-      "createdAt": "2025-07-24T20:49:19.609Z",
-      "updatedAt": "2025-07-24T20:49:19.609Z",
-      "createdBy": "347fe6b4-4e24-498e-b858-7c1eab51918b",
-      "downloadCount": 0,
-      "description": "Evaluates build-versus-buy decisions by analyzing technical requirements, team capabilities, timeline constraints, and total cost of ownership. Maps decision impacts across your system architecture.",
-      "filePath": "templates/decision-analysis-agent.json",
       "version": "1.0.2"
     },
     {
