@@ -5,7 +5,7 @@
     "slug": "incremental-system-discovery",
     "description": "Conversational flow that identifies and integrates new systems into existing workspace architecture through targeted questioning and dependency analysis.",
     "conversationStarter": "🔍 What systems are missing from your architecture?\n\nTell me about any external APIs, internal tools, databases, \nor infrastructure that connects to your existing systems.",
-    "version": "1.0.22",
+    "version": "1.0.23",
     "icon": "SquaresUnite",
     "capabilities": [],
     "examples": [],
@@ -24,8 +24,8 @@
     "artifactId": null,
     "hydrationStatus": "empty",
     "orgCode": "org-g-s922vrvzzt",
-    "errorCount": 5,
-    "nodeCount": 7
+    "errorCount": 6,
+    "nodeCount": 8
   },
   "detail": {
     "id": "01K0SN5D6H97VMKM2YTMZZFVQA",
@@ -42,8 +42,8 @@
         ],
         "style": {
           "position": {
-            "x": 225,
-            "y": -555
+            "x": -45,
+            "y": -645
           }
         },
         "fieldMappings": []
@@ -59,8 +59,8 @@
         ],
         "style": {
           "position": {
-            "x": 240,
-            "y": 390
+            "x": 705,
+            "y": 0
           }
         },
         "fieldMappings": []
@@ -74,8 +74,8 @@
         "capabilities": [],
         "style": {
           "position": {
-            "x": 195,
-            "y": -120
+            "x": 360,
+            "y": -570
           }
         },
         "fieldMappings": []
@@ -92,8 +92,8 @@
         ],
         "style": {
           "position": {
-            "x": 195,
-            "y": 45
+            "x": 465,
+            "y": -390
           }
         },
         "fieldMappings": []
@@ -107,8 +107,8 @@
         "capabilities": [],
         "style": {
           "position": {
-            "x": 195,
-            "y": 240
+            "x": 465,
+            "y": -150
           }
         },
         "fieldMappings": []
@@ -122,8 +122,8 @@
         "capabilities": [],
         "style": {
           "position": {
-            "x": 195,
-            "y": -465
+            "x": 75,
+            "y": -570
           }
         },
         "fieldMappings": []
@@ -140,8 +140,26 @@
         ],
         "style": {
           "position": {
-            "x": 195,
-            "y": -315
+            "x": 75,
+            "y": -390
+          }
+        },
+        "fieldMappings": []
+      },
+      {
+        "nodePath": "artifacts/connection/create-with-human-in-loop",
+        "nodeInstanceName": "node_1753429677639",
+        "displayName": "create-with-human-in-loop",
+        "description": "Creates multiple Connection in a single batch operation, returning a list of entity containers for the created entities",
+        "kind": "human-in-loop",
+        "capabilities": [
+          "BATCH_CREATE",
+          "HUMAN_IN_LOOP"
+        ],
+        "style": {
+          "position": {
+            "x": 75,
+            "y": -165
           }
         },
         "fieldMappings": []
@@ -154,16 +172,6 @@
         "to": "node_1753388680439"
       },
       {
-        "id": "edge_1753353077620",
-        "from": "node_1753353044079",
-        "to": "node_1753385220189"
-      },
-      {
-        "id": "edge_1753385146393",
-        "from": "node_1753352584146",
-        "to": "node_1753353044079"
-      },
-      {
         "id": "edge_1753385239236",
         "from": "node_1753385220189",
         "to": "__end__"
@@ -171,12 +179,29 @@
       {
         "id": "edge_1753388698948",
         "from": "node_1753388680439",
-        "to": "node_1753389758522"
+        "to": "node_1753352584146"
       },
       {
-        "id": "edge_1753389812249",
+        "id": "edge_1753429570457",
         "from": "node_1753389758522",
-        "to": "node_1753352584146"
+        "to": "node_1753353044079"
+      },
+      {
+        "id": "edge_1753429613019",
+        "from": "node_1753352584146",
+        "to": "node_1753389758522",
+        "edgeType": "validatedSmoothstep"
+      },
+      {
+        "id": "edge-node_1753353044079-node_1753429677639",
+        "from": "node_1753353044079",
+        "to": "node_1753429677639",
+        "edgeType": "validatedSmoothstep"
+      },
+      {
+        "id": "edge_1753430034304",
+        "from": "node_1753429677639",
+        "to": "node_1753385220189"
       }
     ],
     "annotations": [],
@@ -185,7 +210,7 @@
     "status": null,
     "orgCode": "org-g-s922vrvzzt",
     "styles": {
-      "orientation": "vertical",
+      "orientation": "horizontal",
       "edgeType": "default"
     }
   },
@@ -194,8 +219,8 @@
     "downloadCount": 0
   },
   "disable": false,
-  "createdAt": "2025-07-24T20:48:46.029Z",
-  "updatedAt": "2025-07-24T20:48:46.029Z",
+  "createdAt": "2025-07-25T08:09:24.240Z",
+  "updatedAt": "2025-07-25T08:09:24.240Z",
   "createdBy": "347fe6b4-4e24-498e-b858-7c1eab51918b",
   "updatedBy": "347fe6b4-4e24-498e-b858-7c1eab51918b"
 }
