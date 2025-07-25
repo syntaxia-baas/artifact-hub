@@ -5,7 +5,7 @@
     "slug": "market-research-agent",
     "description": "Analyzes market landscapes, competitor positioning, and technology trends to identify opportunities and threats in your business domain. Maps market dynamics to your system architecture and business processes.",
     "conversationStarter": "🔍 Let's map your market landscape!\n\nDescribe your product/service, target market, and key competitors. \nInclude any specific market questions you're exploring - I'll research \nthe competitive landscape and map how market forces connect to your \nsystems and strategy.",
-    "version": "1.0.3",
+    "version": "1.0.6",
     "icon": "TrendingUp",
     "capabilities": [],
     "examples": [],
@@ -21,7 +21,7 @@
     "artifactId": null,
     "hydrationStatus": "empty",
     "orgCode": "org-g-s922vrvzzt",
-    "errorCount": 2,
+    "errorCount": 0,
     "nodeCount": 4
   },
   "detail": {
@@ -39,8 +39,8 @@
         ],
         "style": {
           "position": {
-            "x": 360,
-            "y": -180
+            "x": 330,
+            "y": -315
           }
         },
         "fieldMappings": []
@@ -56,8 +56,8 @@
         ],
         "style": {
           "position": {
-            "x": 360,
-            "y": 225
+            "x": 330,
+            "y": 210
           }
         },
         "fieldMappings": []
@@ -71,8 +71,8 @@
         "capabilities": [],
         "style": {
           "position": {
-            "x": 315,
-            "y": -90
+            "x": 285,
+            "y": -195
           }
         },
         "fieldMappings": []
@@ -86,8 +86,8 @@
         "capabilities": [],
         "style": {
           "position": {
-            "x": 315,
-            "y": 75
+            "x": 285,
+            "y": 0
           }
         },
         "fieldMappings": []
@@ -125,8 +125,8 @@
     "downloadCount": 0
   },
   "disable": false,
-  "createdAt": "2025-07-24T20:49:03.177Z",
-  "updatedAt": "2025-07-24T20:49:03.177Z",
+  "createdAt": "2025-07-25T19:59:45.178Z",
+  "updatedAt": "2025-07-25T19:59:45.178Z",
   "createdBy": "347fe6b4-4e24-498e-b858-7c1eab51918b",
   "updatedBy": "347fe6b4-4e24-498e-b858-7c1eab51918b"
 }
