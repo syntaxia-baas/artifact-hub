@@ -5,7 +5,7 @@
     "slug": "domain-attributes-builder",
     "description": "Takes context as input along with entity information (Core Entities, Systems) and extends the domain by identifying and mapping data structures.",
     "conversationStarter": "",
-    "version": "0.0.10",
+    "version": "0.0.11",
     "icon": "DiamondPlus",
     "capabilities": [],
     "examples": [],
@@ -40,7 +40,7 @@
         "style": {
           "position": {
             "x": 255,
-            "y": -180
+            "y": -210
           }
         },
         "fieldMappings": []
@@ -102,7 +102,7 @@
         "style": {
           "position": {
             "x": 210,
-            "y": -105
+            "y": -135
           }
         },
         "fieldMappings": []
@@ -145,8 +145,8 @@
     "downloadCount": 0
   },
   "disable": false,
-  "createdAt": "2025-07-24T20:46:19.770Z",
-  "updatedAt": "2025-07-24T20:46:19.770Z",
+  "createdAt": "2025-07-25T14:48:16.008Z",
+  "updatedAt": "2025-07-25T14:48:16.008Z",
   "createdBy": "347fe6b4-4e24-498e-b858-7c1eab51918b",
   "updatedBy": "347fe6b4-4e24-498e-b858-7c1eab51918b"
 }
