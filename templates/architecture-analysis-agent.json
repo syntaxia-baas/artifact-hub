@@ -5,7 +5,7 @@
     "slug": "architecture-analysis-agent",
     "description": "Analyzes system architecture for complexity, dependencies, technical debt, and optimization opportunities. Maps architectural decisions to business outcomes and team productivity.",
     "conversationStarter": "🏗️ Let's analyze your architecture intelligence!\n\nDescribe your system architecture, technology stack, and current \nchallenges. Include deployment patterns and team structure - I'll \nmap complexity, dependencies, and optimization opportunities.",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "icon": "Network",
     "capabilities": [],
     "examples": [],
@@ -21,8 +21,8 @@
     "artifactId": null,
     "hydrationStatus": "empty",
     "orgCode": "org-g-s922vrvzzt",
-    "errorCount": 1,
-    "nodeCount": 2
+    "errorCount": 0,
+    "nodeCount": 4
   },
   "detail": {
     "id": "01K0YG5VVY5GH9YSD1E8XXV3V9",
@@ -40,7 +40,7 @@
         "style": {
           "position": {
             "x": 30,
-            "y": -75
+            "y": -45
           }
         },
         "fieldMappings": []
@@ -56,8 +56,38 @@
         ],
         "style": {
           "position": {
-            "x": 165,
-            "y": 45
+            "x": 30,
+            "y": 360
+          }
+        },
+        "fieldMappings": []
+      },
+      {
+        "nodePath": "artifacts/workspace/context-builder",
+        "nodeInstanceName": "node_1753473296287",
+        "displayName": "context-builder",
+        "description": "Node for building context for selected context path",
+        "kind": "tool-call",
+        "capabilities": [],
+        "style": {
+          "position": {
+            "x": -15,
+            "y": 60
+          }
+        },
+        "fieldMappings": []
+      },
+      {
+        "nodePath": "artifacts/workspace/research-automation",
+        "nodeInstanceName": "node_1753473305739",
+        "displayName": "research-automation",
+        "description": "Node for automated research and analysis tasks with workspace context",
+        "kind": "tool-call",
+        "capabilities": [],
+        "style": {
+          "position": {
+            "x": -15,
+            "y": 210
           }
         },
         "fieldMappings": []
@@ -67,8 +97,17 @@
       {
         "id": "__start__-to-__end__",
         "from": "__start__",
-        "to": "__end__",
-        "description": ""
+        "to": "node_1753473296287"
+      },
+      {
+        "id": "edge_1753473309522",
+        "from": "node_1753473296287",
+        "to": "node_1753473305739"
+      },
+      {
+        "id": "edge_1753473319910",
+        "from": "node_1753473305739",
+        "to": "__end__"
       }
     ],
     "annotations": [],
@@ -76,15 +115,18 @@
     "executionConfig": null,
     "status": null,
     "orgCode": "org-g-s922vrvzzt",
-    "styles": null
+    "styles": {
+      "orientation": "vertical",
+      "edgeType": "default"
+    }
   },
   "license": "Mit",
   "metadata": {
     "downloadCount": 0
   },
   "disable": false,
-  "createdAt": "2025-07-24T20:49:44.175Z",
-  "updatedAt": "2025-07-24T20:49:44.175Z",
+  "createdAt": "2025-07-25T20:00:33.893Z",
+  "updatedAt": "2025-07-25T20:00:33.893Z",
   "createdBy": "347fe6b4-4e24-498e-b858-7c1eab51918b",
   "updatedBy": "347fe6b4-4e24-498e-b858-7c1eab51918b"
 }
