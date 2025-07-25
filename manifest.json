@@ -1,7 +1,18 @@
 {
-  "lastUpdated": "2025-07-25T20:00:34.900Z",
+  "lastUpdated": "2025-07-25T20:00:40.679Z",
   "totalTemplates": 13,
   "graphs": [
+    {
+      "id": "01K0YG7X7HBGP89K6PQQSDKNMP",
+      "name": " Communication Intelligence Extractor",
+      "createdAt": "2025-07-25T20:00:39.609Z",
+      "updatedAt": "2025-07-25T20:00:39.609Z",
+      "createdBy": "347fe6b4-4e24-498e-b858-7c1eab51918b",
+      "downloadCount": 0,
+      "description": "Monitors Slack conversations to extract key decisions, issues, and insights, then maps them to relevant systems and processes. Captures organizational knowledge from informal communications.",
+      "filePath": "templates/communication-intelligence-extractor.json",
+      "version": "1.0.6"
+    },
     {
       "id": "01K0YG5V016YKXW77793Q8CX3X",
       "name": "Architecture Analysis Agent",
@@ -100,17 +111,6 @@
       "description": "Audits enterprise systems and processes to assess GenAI readiness, then provides comprehensive transformation roadmaps. Maps AI integration opportunities, agent deployment strategies, and system modernization paths to future-proof your organization.",
       "filePath": "templates/enterprise-ai-evolution-strategist.json",
       "version": "1.0.2"
-    },
-    {
-      "id": "01K0YG7X7HBGP89K6PQQSDKNMP",
-      "name": " Communication Intelligence Extractor",
-      "createdAt": "2025-07-24T20:49:51.494Z",
-      "updatedAt": "2025-07-24T20:49:51.494Z",
-      "createdBy": "347fe6b4-4e24-498e-b858-7c1eab51918b",
-      "downloadCount": 0,
-      "description": "Monitors Slack conversations to extract key decisions, issues, and insights, then maps them to relevant systems and processes. Captures organizational knowledge from informal communications.",
-      "filePath": "templates/communication-intelligence-extractor.json",
-      "version": "1.0.4"
     },
     {
       "id": "01JYPDP8FKHCN5SSKFY05A85HX",
