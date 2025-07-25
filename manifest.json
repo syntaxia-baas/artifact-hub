@@ -1,7 +1,18 @@
 {
-  "lastUpdated": "2025-07-25T19:59:23.197Z",
+  "lastUpdated": "2025-07-25T19:59:31.852Z",
   "totalTemplates": 13,
   "graphs": [
+    {
+      "id": "01K0SN50K41RNWA1GM3VTC1GRS",
+      "name": "Incremental System Discovery",
+      "createdAt": "2025-07-25T19:59:30.888Z",
+      "updatedAt": "2025-07-25T19:59:30.888Z",
+      "createdBy": "347fe6b4-4e24-498e-b858-7c1eab51918b",
+      "downloadCount": 0,
+      "description": "Conversational flow that identifies and integrates new systems into existing workspace architecture through targeted questioning and dependency analysis.",
+      "filePath": "templates/incremental-system-discovery.json",
+      "version": "1.0.27"
+    },
     {
       "id": "01JYP6R1V0N4SFDWRQDY8FRRTH",
       "name": "Initialize workspace",
@@ -23,17 +34,6 @@
       "description": "Takes context as input along with entity information (Core Entities, Systems) and extends the domain by identifying and mapping data structures.",
       "filePath": "templates/domain-attributes-builder.json",
       "version": "0.0.14"
-    },
-    {
-      "id": "01K0SN50K41RNWA1GM3VTC1GRS",
-      "name": "Incremental System Discovery",
-      "createdAt": "2025-07-25T09:44:58.536Z",
-      "updatedAt": "2025-07-25T09:44:58.536Z",
-      "createdBy": "347fe6b4-4e24-498e-b858-7c1eab51918b",
-      "downloadCount": 0,
-      "description": "Conversational flow that identifies and integrates new systems into existing workspace architecture through targeted questioning and dependency analysis.",
-      "filePath": "templates/incremental-system-discovery.json",
-      "version": "1.0.27"
     },
     {
       "id": "01K0YWAEEXH8QND8B51Y88Y4NH",
