@@ -1,7 +1,18 @@
 {
-  "lastUpdated": "2025-07-25T09:44:59.639Z",
+  "lastUpdated": "2025-07-25T14:48:17.267Z",
   "totalTemplates": 13,
   "graphs": [
+    {
+      "id": "01JYPS7J4M1X9476DPHKGSAZ14",
+      "name": "Domain Attributes builder",
+      "createdAt": "2025-07-25T14:48:16.008Z",
+      "updatedAt": "2025-07-25T14:48:16.008Z",
+      "createdBy": "347fe6b4-4e24-498e-b858-7c1eab51918b",
+      "downloadCount": 0,
+      "description": "Takes context as input along with entity information (Core Entities, Systems) and extends the domain by identifying and mapping data structures.",
+      "filePath": "templates/domain-attributes-builder.json",
+      "version": "0.0.11"
+    },
     {
       "id": "01K0SN50K41RNWA1GM3VTC1GRS",
       "name": "Incremental System Discovery",
@@ -99,17 +110,6 @@
       "downloadCount": 0,
       "description": "discovers and maps your digital environment by creating entities, processes, and systems along with their interconnections. Generates business-specific attributes and metadata tailored to your organizational context, establishing a foundational knowledge graph for downstream automation and analysis",
       "filePath": "templates/initialize-workspace.json",
-      "version": "0.0.10"
-    },
-    {
-      "id": "01JYPS7J4M1X9476DPHKGSAZ14",
-      "name": "Domain Attributes builder",
-      "createdAt": "2025-07-24T20:46:19.770Z",
-      "updatedAt": "2025-07-24T20:46:19.770Z",
-      "createdBy": "347fe6b4-4e24-498e-b858-7c1eab51918b",
-      "downloadCount": 0,
-      "description": "Takes context as input along with entity information (Core Entities, Systems) and extends the domain by identifying and mapping data structures.",
-      "filePath": "templates/domain-attributes-builder.json",
       "version": "0.0.10"
     },
     {
