@@ -5,7 +5,7 @@
     "slug": "incremental-system-discovery",
     "description": "Conversational flow that identifies and integrates new systems into existing workspace architecture through targeted questioning and dependency analysis.",
     "conversationStarter": "🔍 What systems are missing from your architecture?\n\nTell me about any external APIs, internal tools, databases, \nor infrastructure that connects to your existing systems.",
-    "version": "1.0.23",
+    "version": "1.0.27",
     "icon": "SquaresUnite",
     "capabilities": [],
     "examples": [],
@@ -24,8 +24,8 @@
     "artifactId": null,
     "hydrationStatus": "empty",
     "orgCode": "org-g-s922vrvzzt",
-    "errorCount": 6,
-    "nodeCount": 8
+    "errorCount": 0,
+    "nodeCount": 7
   },
   "detail": {
     "id": "01K0SN5D6H97VMKM2YTMZZFVQA",
@@ -59,8 +59,8 @@
         ],
         "style": {
           "position": {
-            "x": 705,
-            "y": 0
+            "x": 465,
+            "y": -45
           }
         },
         "fieldMappings": []
@@ -78,7 +78,12 @@
             "y": -570
           }
         },
-        "fieldMappings": []
+        "fieldMappings": [
+          {
+            "targetField": "userPrompt",
+            "transformType": "workflow_input"
+          }
+        ]
       },
       {
         "nodePath": "artifacts/domain_entity/create-with-human-in-loop",
@@ -92,26 +97,18 @@
         ],
         "style": {
           "position": {
-            "x": 465,
+            "x": 435,
             "y": -390
           }
         },
-        "fieldMappings": []
-      },
-      {
-        "nodePath": "artifacts/system/attributes-persist",
-        "nodeInstanceName": "node_1753385220189",
-        "displayName": "attributes-persist",
-        "description": "Node for persisting both data and respective schemas for core entities",
-        "kind": "tool-call",
-        "capabilities": [],
-        "style": {
-          "position": {
-            "x": 465,
-            "y": -150
+        "fieldMappings": [
+          {
+            "targetField": "entities",
+            "sourceField": "systems",
+            "transformType": "function",
+            "transformation": "return value.map(v => v.entity);"
           }
-        },
-        "fieldMappings": []
+        ]
       },
       {
         "nodePath": "artifacts/workspace/context-builder",
@@ -144,12 +141,19 @@
             "y": -390
           }
         },
-        "fieldMappings": []
+        "fieldMappings": [
+          {
+            "targetField": "entities",
+            "sourceField": "domainGroups",
+            "transformType": "function",
+            "transformation": "return value.map(v => v.entity);"
+          }
+        ]
       },
       {
         "nodePath": "artifacts/connection/create-with-human-in-loop",
         "nodeInstanceName": "node_1753429677639",
-        "displayName": "create-with-human-in-loop",
+        "displayName": "Persist connections",
         "description": "Creates multiple Connection in a single batch operation, returning a list of entity containers for the created entities",
         "kind": "human-in-loop",
         "capabilities": [
@@ -162,7 +166,14 @@
             "y": -165
           }
         },
-        "fieldMappings": []
+        "fieldMappings": [
+          {
+            "targetField": "entities",
+            "sourceField": "connections",
+            "transformType": "function",
+            "transformation": "return value.map(v => v.entity);"
+          }
+        ]
       }
     ],
     "edges": [
@@ -170,11 +181,6 @@
         "id": "edge_1753353062800",
         "from": "__start__",
         "to": "node_1753388680439"
-      },
-      {
-        "id": "edge_1753385239236",
-        "from": "node_1753385220189",
-        "to": "__end__"
       },
       {
         "id": "edge_1753388698948",
@@ -199,9 +205,9 @@
         "edgeType": "validatedSmoothstep"
       },
       {
-        "id": "edge_1753430034304",
+        "id": "edge_1753436685123",
         "from": "node_1753429677639",
-        "to": "node_1753385220189"
+        "to": "__end__"
       }
     ],
     "annotations": [],
@@ -219,8 +225,8 @@
     "downloadCount": 0
   },
   "disable": false,
-  "createdAt": "2025-07-25T08:09:24.240Z",
-  "updatedAt": "2025-07-25T08:09:24.240Z",
+  "createdAt": "2025-07-25T09:44:58.536Z",
+  "updatedAt": "2025-07-25T09:44:58.536Z",
   "createdBy": "347fe6b4-4e24-498e-b858-7c1eab51918b",
   "updatedBy": "347fe6b4-4e24-498e-b858-7c1eab51918b"
 }
