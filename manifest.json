@@ -1,7 +1,18 @@
 {
-  "lastUpdated": "2025-07-25T19:59:38.775Z",
+  "lastUpdated": "2025-07-25T19:59:46.764Z",
   "totalTemplates": 13,
   "graphs": [
+    {
+      "id": "01K0YFMAYNDMBZWCJFDH1C1M31",
+      "name": "Market Research Agent",
+      "createdAt": "2025-07-25T19:59:45.178Z",
+      "updatedAt": "2025-07-25T19:59:45.178Z",
+      "createdBy": "347fe6b4-4e24-498e-b858-7c1eab51918b",
+      "downloadCount": 0,
+      "description": "Analyzes market landscapes, competitor positioning, and technology trends to identify opportunities and threats in your business domain. Maps market dynamics to your system architecture and business processes.",
+      "filePath": "templates/market-research-agent.json",
+      "version": "1.0.6"
+    },
     {
       "id": "01K0SP0AHYJ9EFV9TH1XG2E56R",
       "name": "Connections Mapper",
@@ -100,17 +111,6 @@
       "description": "Evaluates build-versus-buy decisions by analyzing technical requirements, team capabilities, timeline constraints, and total cost of ownership. Maps decision impacts across your system architecture.",
       "filePath": "templates/decision-analysis-agent.json",
       "version": "1.0.2"
-    },
-    {
-      "id": "01K0YFMAYNDMBZWCJFDH1C1M31",
-      "name": "Market Research Agent",
-      "createdAt": "2025-07-24T20:49:03.177Z",
-      "updatedAt": "2025-07-24T20:49:03.177Z",
-      "createdBy": "347fe6b4-4e24-498e-b858-7c1eab51918b",
-      "downloadCount": 0,
-      "description": "Analyzes market landscapes, competitor positioning, and technology trends to identify opportunities and threats in your business domain. Maps market dynamics to your system architecture and business processes.",
-      "filePath": "templates/market-research-agent.json",
-      "version": "1.0.3"
     },
     {
       "id": "01JYPDP8FKHCN5SSKFY05A85HX",
