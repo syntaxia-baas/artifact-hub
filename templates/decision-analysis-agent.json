@@ -5,7 +5,7 @@
     "slug": "decision-analysis-agent",
     "description": "Evaluates build-versus-buy decisions by analyzing technical requirements, team capabilities, timeline constraints, and total cost of ownership. Maps decision impacts across your system architecture.",
     "conversationStarter": "⚖️ Let's analyze your build vs buy decision!\n\nDescribe the capability you need, your current tech stack, team skills, \nand timeline. Include any vendor solutions you're considering - I'll \nmap the technical and business tradeoffs across your architecture.",
-    "version": "1.0.2",
+    "version": "1.0.4",
     "icon": "Scale",
     "capabilities": [],
     "examples": [],
@@ -21,8 +21,8 @@
     "artifactId": null,
     "hydrationStatus": "empty",
     "orgCode": "org-g-s922vrvzzt",
-    "errorCount": 1,
-    "nodeCount": 2
+    "errorCount": 0,
+    "nodeCount": 4
   },
   "detail": {
     "id": "01K0YFQTPQAWD1MTHMX3C4KBSJ",
@@ -39,8 +39,8 @@
         ],
         "style": {
           "position": {
-            "x": 30,
-            "y": 0
+            "x": 75,
+            "y": -30
           }
         },
         "fieldMappings": []
@@ -56,8 +56,38 @@
         ],
         "style": {
           "position": {
-            "x": 195,
-            "y": 60
+            "x": 75,
+            "y": 450
+          }
+        },
+        "fieldMappings": []
+      },
+      {
+        "nodePath": "artifacts/workspace/context-builder",
+        "nodeInstanceName": "node_1753473120314",
+        "displayName": "context-builder",
+        "description": "Node for building context for selected context path",
+        "kind": "tool-call",
+        "capabilities": [],
+        "style": {
+          "position": {
+            "x": 45,
+            "y": 120
+          }
+        },
+        "fieldMappings": []
+      },
+      {
+        "nodePath": "artifacts/workspace/research-automation",
+        "nodeInstanceName": "node_1753473140353",
+        "displayName": "research-automation",
+        "description": "Node for automated research and analysis tasks with workspace context",
+        "kind": "tool-call",
+        "capabilities": [],
+        "style": {
+          "position": {
+            "x": 45,
+            "y": 270
           }
         },
         "fieldMappings": []
@@ -67,8 +97,17 @@
       {
         "id": "__start__-to-__end__",
         "from": "__start__",
-        "to": "__end__",
-        "description": ""
+        "to": "node_1753473120314"
+      },
+      {
+        "id": "edge_1753473143719",
+        "from": "node_1753473120314",
+        "to": "node_1753473140353"
+      },
+      {
+        "id": "edge_1753473149141",
+        "from": "node_1753473140353",
+        "to": "__end__"
       }
     ],
     "annotations": [],
@@ -76,15 +115,18 @@
     "executionConfig": null,
     "status": null,
     "orgCode": "org-g-s922vrvzzt",
-    "styles": null
+    "styles": {
+      "orientation": "vertical",
+      "edgeType": "default"
+    }
   },
   "license": "Mit",
   "metadata": {
     "downloadCount": 0
   },
   "disable": false,
-  "createdAt": "2025-07-24T20:49:19.609Z",
-  "updatedAt": "2025-07-24T20:49:19.609Z",
+  "createdAt": "2025-07-25T19:59:53.217Z",
+  "updatedAt": "2025-07-25T19:59:53.217Z",
   "createdBy": "347fe6b4-4e24-498e-b858-7c1eab51918b",
   "updatedBy": "347fe6b4-4e24-498e-b858-7c1eab51918b"
 }
