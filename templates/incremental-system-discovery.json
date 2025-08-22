@@ -5,7 +5,7 @@
     "slug": "incremental-system-discovery",
     "description": "Conversational flow that identifies and integrates new systems into existing workspace architecture through targeted questioning and dependency analysis.",
     "conversationStarter": "🔍 What systems are missing from your architecture?\n\nTell me about any external APIs, internal tools, databases, \nor infrastructure that connects to your existing systems.",
-    "version": "1.0.27",
+    "version": "1.0.30",
     "icon": "SquaresUnite",
     "capabilities": [],
     "examples": [],
@@ -22,7 +22,7 @@
     "groupId": "cg-org-g-s922vrvzzt-wsp-o-hd7js5i4cd",
     "metaGraphType": "system",
     "artifactId": null,
-    "hydrationStatus": "empty",
+    "hydrationStatus": "hydrated",
     "orgCode": "org-g-s922vrvzzt",
     "errorCount": 0,
     "nodeCount": 7
@@ -74,7 +74,7 @@
         "capabilities": [],
         "style": {
           "position": {
-            "x": 360,
+            "x": 450,
             "y": -570
           }
         },
@@ -82,31 +82,6 @@
           {
             "targetField": "userPrompt",
             "transformType": "workflow_input"
-          }
-        ]
-      },
-      {
-        "nodePath": "artifacts/domain_entity/create-with-human-in-loop",
-        "nodeInstanceName": "node_1753353044079",
-        "displayName": "Persist systems",
-        "description": "Creates multiple DomainEntity in a single batch operation, returning a list of entity containers for the created entities",
-        "kind": "human-in-loop",
-        "capabilities": [
-          "BATCH_CREATE",
-          "HUMAN_IN_LOOP"
-        ],
-        "style": {
-          "position": {
-            "x": 435,
-            "y": -390
-          }
-        },
-        "fieldMappings": [
-          {
-            "targetField": "entities",
-            "sourceField": "systems",
-            "transformType": "function",
-            "transformation": "return value.map(v => v.entity);"
           }
         ]
       },
@@ -174,6 +149,31 @@
             "transformation": "return value.map(v => v.entity);"
           }
         ]
+      },
+      {
+        "nodePath": "artifacts/system/create-with-human-in-loop",
+        "nodeInstanceName": "node_1753547726253",
+        "displayName": "Persist systems",
+        "description": "Creates multiple WorkspaceSystemEntity in a single batch operation, returning a list of entity containers for the created entities",
+        "kind": "human-in-loop",
+        "capabilities": [
+          "BATCH_CREATE",
+          "HUMAN_IN_LOOP"
+        ],
+        "style": {
+          "position": {
+            "x": 450,
+            "y": -390
+          }
+        },
+        "fieldMappings": [
+          {
+            "targetField": "entities",
+            "sourceField": "systems",
+            "transformType": "function",
+            "transformation": "return value.map(v => v.entity);"
+          }
+        ]
       }
     ],
     "edges": [
@@ -188,26 +188,26 @@
         "to": "node_1753352584146"
       },
       {
-        "id": "edge_1753429570457",
-        "from": "node_1753389758522",
-        "to": "node_1753353044079"
+        "id": "edge_1753436685123",
+        "from": "node_1753429677639",
+        "to": "__end__"
       },
       {
-        "id": "edge_1753429613019",
+        "id": "edge_1753547751081",
         "from": "node_1753352584146",
         "to": "node_1753389758522",
         "edgeType": "validatedSmoothstep"
       },
       {
-        "id": "edge-node_1753353044079-node_1753429677639",
-        "from": "node_1753353044079",
-        "to": "node_1753429677639",
-        "edgeType": "validatedSmoothstep"
+        "id": "edge-node_1753389758522-node_1753547726253",
+        "from": "node_1753389758522",
+        "to": "node_1753547726253"
       },
       {
-        "id": "edge_1753436685123",
-        "from": "node_1753429677639",
-        "to": "__end__"
+        "id": "edge_1753547782474",
+        "from": "node_1753547726253",
+        "to": "node_1753429677639",
+        "edgeType": "validatedSmoothstep"
       }
     ],
     "annotations": [],
@@ -225,8 +225,8 @@
     "downloadCount": 0
   },
   "disable": false,
-  "createdAt": "2025-07-25T19:59:30.888Z",
-  "updatedAt": "2025-07-25T19:59:30.888Z",
+  "createdAt": "2025-08-22T19:34:19.065Z",
+  "updatedAt": "2025-08-22T19:34:19.065Z",
   "createdBy": "347fe6b4-4e24-498e-b858-7c1eab51918b",
   "updatedBy": "347fe6b4-4e24-498e-b858-7c1eab51918b"
 }
