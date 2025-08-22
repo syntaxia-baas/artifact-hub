@@ -133,17 +133,6 @@
       "description": "Enables natural language querying across your mapped digital systems and connections. Analyzes relationships, dependencies, and data flows to provide actionable insights about system performance, integration bottlenecks, and architectural patterns within your environment.",
       "filePath": "templates/query-how-systems-are-integrated.json",
       "version": "0.0.1"
-    },
-    {
-      "id": "01JZ27Z48D59PZ030BEHMVCSJG",
-      "name": "Meta Graph to Publish",
-      "createdAt": "2025-07-01T12:02:59.338Z",
-      "updatedAt": "2025-07-01T12:02:59.338Z",
-      "createdBy": "347fe6b4-4e24-498e-b858-7c1eab51918b",
-      "downloadCount": 0,
-      "description": "First graph to publish",
-      "filePath": "templates/meta-graph-to-publish.json",
-      "version": "0.0.3"
     }
   ]
 }
