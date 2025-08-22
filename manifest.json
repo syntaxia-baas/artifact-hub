@@ -132,7 +132,7 @@
       "downloadCount": 0,
       "description": "Enables natural language querying across your mapped digital systems and connections. Analyzes relationships, dependencies, and data flows to provide actionable insights about system performance, integration bottlenecks, and architectural patterns within your environment.",
       "filePath": "templates/query-how-systems-are-integrated.json",
-      "version": "0.0.1"
+      "version": "0.0.2"
     }
   ]
 }
