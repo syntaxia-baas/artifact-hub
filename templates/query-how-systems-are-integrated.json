@@ -20,7 +20,7 @@
       "workspaceCode": "wsp-o-hd7js5i4cd"
     },
     "groupId": "cg-org-g-s922vrvzzt-wsp-o-hd7js5i4cd",
-    "artifactType": "workspace_system",
+    "artifactType": "system",
     "artifactId": null,
     "hydrationStatus": "new",
     "orgCode": "org-g-s922vrvzzt"
@@ -52,7 +52,7 @@
         "fieldMappings": []
       },
       {
-        "nodePath": "artifacts/workspace_system/init-workspace",
+        "nodePath": "artifacts/system/init-workspace",
         "nodeInstanceName": "node_1750952101322",
         "displayName": "init-workspace",
         "description": "",
