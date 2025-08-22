@@ -5,7 +5,7 @@
     "slug": "query-how-systems-are-integrated",
     "description": "Enables natural language querying across your mapped digital systems and connections. Analyzes relationships, dependencies, and data flows to provide actionable insights about system performance, integration bottlenecks, and architectural patterns within your environment.",
     "conversationStarter": "🔗 Describe which systems you want to know about and their dependencies.",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "icon": "SquaresIntersect",
     "capabilities": [],
     "examples": [],
