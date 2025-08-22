@@ -5,7 +5,7 @@
     "slug": "incremental-system-discovery",
     "description": "Conversational flow that identifies and integrates new systems into existing workspace architecture through targeted questioning and dependency analysis.",
     "conversationStarter": "🔍 What systems are missing from your architecture?\n\nTell me about any external APIs, internal tools, databases, \nor infrastructure that connects to your existing systems.",
-    "version": "1.0.30",
+    "version": "1.0.31",
     "icon": "SquaresUnite",
     "capabilities": [],
     "examples": [],
@@ -74,7 +74,7 @@
         "capabilities": [],
         "style": {
           "position": {
-            "x": 450,
+            "x": 390,
             "y": -570
           }
         },
@@ -225,8 +225,8 @@
     "downloadCount": 0
   },
   "disable": false,
-  "createdAt": "2025-08-22T19:34:56.428Z",
-  "updatedAt": "2025-08-22T19:34:56.428Z",
+  "createdAt": "2025-08-22T19:35:11.410Z",
+  "updatedAt": "2025-08-22T19:35:11.410Z",
   "createdBy": "347fe6b4-4e24-498e-b858-7c1eab51918b",
   "updatedBy": "347fe6b4-4e24-498e-b858-7c1eab51918b"
 }
