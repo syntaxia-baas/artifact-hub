@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2025-08-22T19:34:20.085Z",
+  "lastUpdated": "2025-08-22T19:34:57.337Z",
   "totalTemplates": 12,
   "graphs": [
     {
       "id": "01K0SN50K41RNWA1GM3VTC1GRS",
       "name": "Incremental System Discovery",
-      "createdAt": "2025-08-22T19:34:19.065Z",
-      "updatedAt": "2025-08-22T19:34:19.065Z",
+      "createdAt": "2025-08-22T19:34:56.428Z",
+      "updatedAt": "2025-08-22T19:34:56.428Z",
       "createdBy": "347fe6b4-4e24-498e-b858-7c1eab51918b",
       "downloadCount": 0,
       "description": "Conversational flow that identifies and integrates new systems into existing workspace architecture through targeted questioning and dependency analysis.",
