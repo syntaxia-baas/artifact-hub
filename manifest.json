@@ -112,17 +112,7 @@
       "filePath": "templates/initialize-workspace.json",
       "version": "0.0.10"
     },
-    {
-      "id": "01JYPDP8FKHCN5SSKFY05A85HX",
-      "name": " Attribute Enhancement Agent",
-      "createdAt": "2025-07-01T19:54:42.399Z",
-      "updatedAt": "2025-07-01T19:54:42.399Z",
-      "createdBy": "347fe6b4-4e24-498e-b858-7c1eab51918b",
-      "downloadCount": 0,
-      "description": "Identifies and adds business-specific metadata, tags, and custom properties to existing entities and systems. Adapts organizational taxonomies and domain-specific classifications to enrich your knowledge graph with contextual business intelligence.",
-      "filePath": "templates/update-system-with-new-profiles.json",
-      "version": "0.0.1"
-    },
+ 
     {
       "id": "01JYPDZBVTRKNW8NPMCYV449RR",
       "name": "System Intelligence Agent",
