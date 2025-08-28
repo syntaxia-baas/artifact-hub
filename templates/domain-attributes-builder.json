@@ -3,8 +3,8 @@
   "definition": {
     "name": "Domain Attributes builder",
     "slug": "domain-attributes-builder",
-    "description": "Takes context as input along with entity information (Core Entities, Systems) and extends the domain by identifying and mapping data structures.",
-    "conversationStarter": "",
+    "description": "Identifies and adds business-specific metadata, tags, and custom properties to existing entities and systems. Adapts organizational taxonomies and domain-specific classifications to enrich your knowledge graph with contextual business intelligence.",
+    "conversationStarter": "🎯 How do you want to improve the system details? Describe what kind of attributes you need. If not sure, just describe the nature of it.",
     "version": "0.0.14",
     "icon": "DiamondPlus",
     "capabilities": [],
@@ -19,7 +19,7 @@
     "groupId": "cg-org-g-s922vrvzzt-wsp-o-hd7js5i4cd",
     "metaGraphType": "workspace",
     "artifactId": null,
-    "hydrationStatus": "new",
+    "hydrationStatus": "hydrated",
     "orgCode": "org-g-s922vrvzzt",
     "errorCount": 0,
     "nodeCount": 5
@@ -150,8 +150,8 @@
     "downloadCount": 0
   },
   "disable": false,
-  "createdAt": "2025-07-25T19:59:13.246Z",
-  "updatedAt": "2025-07-25T19:59:13.246Z",
+  "createdAt": "2025-08-28T17:21:30.174Z",
+  "updatedAt": "2025-08-28T17:21:30.174Z",
   "createdBy": "347fe6b4-4e24-498e-b858-7c1eab51918b",
   "updatedBy": "347fe6b4-4e24-498e-b858-7c1eab51918b"
 }
