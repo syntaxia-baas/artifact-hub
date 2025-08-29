@@ -17,7 +17,7 @@
     "groupId": "cg-org-g-s922vrvzzt-wsp-o-hd7js5i4cd",
     "metaGraphType": "workspace",
     "artifactId": null,
-    "hydrationStatus": "new",
+    "hydrationStatus": "empty",
     "orgCode": "org-g-s922vrvzzt",
     "errorCount": 0,
     "nodeCount": 18
@@ -528,8 +528,8 @@
     "downloadCount": 0
   },
   "disable": false,
-  "createdAt": "2025-07-25T19:59:22.129Z",
-  "updatedAt": "2025-07-25T19:59:22.129Z",
+  "createdAt": "2025-08-29T11:10:04.882Z",
+  "updatedAt": "2025-08-29T11:10:04.882Z",
   "createdBy": "347fe6b4-4e24-498e-b858-7c1eab51918b",
   "updatedBy": "347fe6b4-4e24-498e-b858-7c1eab51918b"
 }
