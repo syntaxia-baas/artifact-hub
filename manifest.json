@@ -1,7 +1,18 @@
 {
-  "lastUpdated": "2025-09-19T08:09:38.347Z",
+  "lastUpdated": "2025-09-19T08:10:34.687Z",
   "totalTemplates": 12,
   "graphs": [
+    {
+      "id": "01JYP6R1V0N4SFDWRQDY8FRRTH",
+      "name": "Initialize workspace",
+      "createdAt": "2025-09-19T08:10:33.545Z",
+      "updatedAt": "2025-09-19T08:10:33.545Z",
+      "createdBy": "347fe6b4-4e24-498e-b858-7c1eab51918b",
+      "downloadCount": 0,
+      "description": "discovers and maps your digital environment by creating entities, processes, and systems along with their interconnections. Generates business-specific attributes and metadata tailored to your organizational context, establishing a foundational knowledge graph for downstream automation and analysis",
+      "filePath": "templates/initialize-workspace.json",
+      "version": "0.0.15"
+    },
     {
       "id": "01K0SP0AHYJ9EFV9TH1XG2E56R",
       "name": "Connections Mapper",
@@ -100,17 +111,6 @@
       "description": "Identifies and adds business-specific metadata, tags, and custom properties to existing entities and systems. Adapts organizational taxonomies and domain-specific classifications to enrich your knowledge graph with contextual business intelligence.",
       "filePath": "templates/attribute-enhancement-agent.json",
       "version": "0.0.8"
-    },
-    {
-      "id": "01JYP6R1V0N4SFDWRQDY8FRRTH",
-      "name": "Initialize workspace",
-      "createdAt": "2025-08-29T11:10:04.882Z",
-      "updatedAt": "2025-08-29T11:10:04.882Z",
-      "createdBy": "347fe6b4-4e24-498e-b858-7c1eab51918b",
-      "downloadCount": 0,
-      "description": "discovers and maps your digital environment by creating entities, processes, and systems along with their interconnections. Generates business-specific attributes and metadata tailored to your organizational context, establishing a foundational knowledge graph for downstream automation and analysis",
-      "filePath": "templates/initialize-workspace.json",
-      "version": "0.0.10"
     },
     {
       "id": "01JYPS7J4M1X9476DPHKGSAZ14",
