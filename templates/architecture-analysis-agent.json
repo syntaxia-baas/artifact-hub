@@ -4,8 +4,8 @@
     "name": "Architecture Analysis Agent",
     "slug": "architecture-analysis-agent",
     "description": "Analyzes system architecture for complexity, dependencies, technical debt, and optimization opportunities. Maps architectural decisions to business outcomes and team productivity.",
-    "conversationStarter": "🏗️ Let's analyze your architecture intelligence!\n\nDescribe your system architecture, technology stack, and current \nchallenges. Include deployment patterns and team structure - I'll \nmap complexity, dependencies, and optimization opportunities.",
-    "version": "1.0.4",
+    "conversationStarter": "## Describe your system architecture and the challenges you're facing\n\n**📋 Format:**\n- System overview (architecture type, scale, technologies)\n- Current challenges or pain points you're experiencing\n- Business context and growth requirements (optional)\n\n**💡 Example:**\n```\nE-commerce Platform - Monolithic Ruby on Rails application serving 50K+ daily users with PostgreSQL database.\n\nChallenges: System takes 5+ seconds to load product pages during peak hours. Deployment takes 45 minutes with downtime. Adding new features requires touching multiple unrelated code areas.\n\nBusiness context: Expecting 3x growth next year, need to reduce time-to-market for new features, and achieve 99.9% uptime.\n```\n\n**🚀 Your turn:** Describe your system architecture and challenges below.",
+    "version": "1.0.5",
     "icon": "Network",
     "capabilities": [],
     "examples": [],
@@ -19,10 +19,20 @@
     "groupId": "cg-org-g-s922vrvzzt-wsp-o-hd7js5i4cd",
     "metaGraphType": "intelligence",
     "artifactId": null,
-    "hydrationStatus": "empty",
+    "hydrationStatus": "hydrated",
     "orgCode": "org-g-s922vrvzzt",
     "errorCount": 0,
-    "nodeCount": 4
+    "nodeCount": 4,
+    "inputSchema": {
+      "type": "static",
+      "rootSchemaName": "ContextBuilderInput",
+      "schemaName": "ContextBuilderInput"
+    },
+    "outputSchema": {
+      "type": "static",
+      "rootSchemaName": "ResearchAutomationNodeOutput",
+      "schemaName": "ResearchAutomationNodeOutput"
+    }
   },
   "detail": {
     "id": "01K0YG5VVY5GH9YSD1E8XXV3V9",
@@ -40,7 +50,7 @@
         "style": {
           "position": {
             "x": 30,
-            "y": -45
+            "y": -75
           }
         },
         "fieldMappings": []
@@ -56,8 +66,8 @@
         ],
         "style": {
           "position": {
-            "x": 30,
-            "y": 360
+            "x": 15,
+            "y": 390
           }
         },
         "fieldMappings": []
@@ -72,7 +82,7 @@
         "style": {
           "position": {
             "x": -15,
-            "y": 60
+            "y": 45
           }
         },
         "fieldMappings": []
@@ -125,8 +135,8 @@
     "downloadCount": 0
   },
   "disable": false,
-  "createdAt": "2025-07-25T20:00:33.893Z",
-  "updatedAt": "2025-07-25T20:00:33.893Z",
+  "createdAt": "2025-09-19T08:08:20.219Z",
+  "updatedAt": "2025-09-19T08:08:20.219Z",
   "createdBy": "347fe6b4-4e24-498e-b858-7c1eab51918b",
   "updatedBy": "347fe6b4-4e24-498e-b858-7c1eab51918b"
 }
