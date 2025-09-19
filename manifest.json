@@ -1,7 +1,18 @@
 {
-  "lastUpdated": "2025-09-19T08:08:43.571Z",
+  "lastUpdated": "2025-09-19T08:09:13.540Z",
   "totalTemplates": 12,
   "graphs": [
+    {
+      "id": "01K0YFMAYNDMBZWCJFDH1C1M31",
+      "name": "Market Research Agent",
+      "createdAt": "2025-09-19T08:09:12.513Z",
+      "updatedAt": "2025-09-19T08:09:12.513Z",
+      "createdBy": "347fe6b4-4e24-498e-b858-7c1eab51918b",
+      "downloadCount": 0,
+      "description": "Analyzes market landscapes, competitor positioning, and technology trends to identify opportunities and threats in your business domain. Maps market dynamics to your system architecture and business processes.",
+      "filePath": "templates/market-research-agent.json",
+      "version": "1.0.9"
+    },
     {
       "id": "01K0YFQSTB3WCZ1AQTQQ6CVNBE",
       "name": "Decision Analysis Agent",
@@ -100,17 +111,6 @@
       "description": "Identifies and adds business-specific metadata, tags, and custom properties to existing entities and systems. Adapts organizational taxonomies and domain-specific classifications to enrich your knowledge graph with contextual business intelligence.",
       "filePath": "templates/domain-attributes-builder.json",
       "version": "0.0.14"
-    },
-    {
-      "id": "01K0YFMAYNDMBZWCJFDH1C1M31",
-      "name": "Market Research Agent",
-      "createdAt": "2025-07-25T19:59:45.178Z",
-      "updatedAt": "2025-07-25T19:59:45.178Z",
-      "createdBy": "347fe6b4-4e24-498e-b858-7c1eab51918b",
-      "downloadCount": 0,
-      "description": "Analyzes market landscapes, competitor positioning, and technology trends to identify opportunities and threats in your business domain. Maps market dynamics to your system architecture and business processes.",
-      "filePath": "templates/market-research-agent.json",
-      "version": "1.0.6"
     },
     {
       "id": "01K0SP0AHYJ9EFV9TH1XG2E56R",
