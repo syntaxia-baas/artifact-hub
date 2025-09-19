@@ -1,7 +1,18 @@
 {
-  "lastUpdated": "2025-08-29T11:10:06.035Z",
-  "totalTemplates": 11,
+  "lastUpdated": "2025-09-19T08:03:52.651Z",
+  "totalTemplates": 12,
   "graphs": [
+    {
+      "id": "01JYPDP8FKHCN5SSKFY05A85HX",
+      "name": " Attribute Enhancement Agent",
+      "createdAt": "2025-09-19T08:03:51.359Z",
+      "updatedAt": "2025-09-19T08:03:51.359Z",
+      "createdBy": "347fe6b4-4e24-498e-b858-7c1eab51918b",
+      "downloadCount": 0,
+      "description": "Identifies and adds business-specific metadata, tags, and custom properties to existing entities and systems. Adapts organizational taxonomies and domain-specific classifications to enrich your knowledge graph with contextual business intelligence.",
+      "filePath": "templates/attribute-enhancement-agent.json",
+      "version": "0.0.8"
+    },
     {
       "id": "01JYP6R1V0N4SFDWRQDY8FRRTH",
       "name": "Initialize workspace",
