@@ -4,8 +4,8 @@
     "name": "Enterprise AI Evolution Strategist",
     "slug": "enterprise-ai-evolution-strategist",
     "description": "Audits enterprise systems and processes to assess GenAI readiness, then provides comprehensive transformation roadmaps. Maps AI integration opportunities, agent deployment strategies, and system modernization paths to future-proof your organization.",
-    "conversationStarter": "🧠 Let's future-proof your enterprise for the GenAI era!\n\nDescribe your current systems, data infrastructure, business processes, \nand team capabilities. Include your AI maturity level and strategic goals - \nI'll analyze your GenAI readiness and create a comprehensive transformation \nroadmap with specific agent opportunities for each system.",
-    "version": "1.0.3",
+    "conversationStarter": "## Describe your organization and AI transformation goals\n\n**📋 Format:**\n- Organization overview (industry, size, current state)\n- Current AI adoption level and existing capabilities\n- Transformation goals and business objectives\n- Key challenges or constraints (optional)\n\n**💡 Example:**\n\\`\\`\\`\nMid-size financial services company (500 employees) with traditional core banking systems and manual processes.\n\nCurrent AI: Basic fraud detection, no generative AI, limited data analytics. Most processes are manual with paper forms.\n\nGoals: Become AI-native within 2 years to improve customer experience, automate loan processing, and compete with fintech startups. Want to reduce manual work by 70% and improve decision speed by 10x.\n\nChallenges: Legacy mainframe systems, regulatory compliance (SOX, banking regulations), limited technical skills in AI/ML.\n\\`\\`\\`\n\n**🚀 Your turn:** Describe your organization and AI transformation vision below.",
+    "version": "1.0.5",
     "icon": "Brain",
     "capabilities": [],
     "examples": [],
@@ -24,10 +24,20 @@
     "groupId": "cg-org-g-s922vrvzzt-wsp-o-hd7js5i4cd",
     "metaGraphType": "intelligence",
     "artifactId": null,
-    "hydrationStatus": "empty",
+    "hydrationStatus": "hydrated",
     "orgCode": "org-g-s922vrvzzt",
     "errorCount": 0,
-    "nodeCount": 4
+    "nodeCount": 4,
+    "inputSchema": {
+      "type": "static",
+      "rootSchemaName": "ContextBuilderInput",
+      "schemaName": "ContextBuilderInput"
+    },
+    "outputSchema": {
+      "type": "static",
+      "rootSchemaName": "ResearchAutomationNodeOutput",
+      "schemaName": "ResearchAutomationNodeOutput"
+    }
   },
   "detail": {
     "id": "01K0YWAGK6CZ67YAMASV54A2YH",
@@ -74,6 +84,12 @@
         "description": "Node for building context for selected context path",
         "kind": "tool-call",
         "capabilities": [],
+        "style": {
+          "position": {
+            "x": 30,
+            "y": 150
+          }
+        },
         "fieldMappings": []
       },
       {
@@ -118,8 +134,8 @@
     "downloadCount": 0
   },
   "disable": false,
-  "createdAt": "2025-07-25T20:00:45.590Z",
-  "updatedAt": "2025-07-25T20:00:45.590Z",
+  "createdAt": "2025-09-19T08:05:53.402Z",
+  "updatedAt": "2025-09-19T08:05:53.402Z",
   "createdBy": "347fe6b4-4e24-498e-b858-7c1eab51918b",
   "updatedBy": "347fe6b4-4e24-498e-b858-7c1eab51918b"
 }
