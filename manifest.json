@@ -1,7 +1,18 @@
 {
-  "lastUpdated": "2025-09-19T08:09:18.969Z",
+  "lastUpdated": "2025-09-19T08:09:38.347Z",
   "totalTemplates": 12,
   "graphs": [
+    {
+      "id": "01K0SP0AHYJ9EFV9TH1XG2E56R",
+      "name": "Connections Mapper",
+      "createdAt": "2025-09-19T08:09:37.245Z",
+      "updatedAt": "2025-09-19T08:09:37.245Z",
+      "createdBy": "347fe6b4-4e24-498e-b858-7c1eab51918b",
+      "downloadCount": 0,
+      "description": "Interactive process that discovers, validates, and creates connections between systems through dependency analysis and data flow identification",
+      "filePath": "templates/connections-mapper.json",
+      "version": "1.0.19"
+    },
     {
       "id": "01K0YFMAYNDMBZWCJFDH1C1M31",
       "name": "Market Research Agent",
@@ -111,17 +122,6 @@
       "description": "Identifies and adds business-specific metadata, tags, and custom properties to existing entities and systems. Adapts organizational taxonomies and domain-specific classifications to enrich your knowledge graph with contextual business intelligence.",
       "filePath": "templates/domain-attributes-builder.json",
       "version": "0.0.14"
-    },
-    {
-      "id": "01K0SP0AHYJ9EFV9TH1XG2E56R",
-      "name": "Connections Mapper",
-      "createdAt": "2025-07-25T19:59:37.662Z",
-      "updatedAt": "2025-07-25T19:59:37.662Z",
-      "createdBy": "347fe6b4-4e24-498e-b858-7c1eab51918b",
-      "downloadCount": 0,
-      "description": "Interactive process that discovers, validates, and creates connections between systems through dependency analysis and data flow identification",
-      "filePath": "templates/connections-mapper.json",
-      "version": "1.0.18"
     },
     {
       "id": "01JYPDZBVTRKNW8NPMCYV449RR",
