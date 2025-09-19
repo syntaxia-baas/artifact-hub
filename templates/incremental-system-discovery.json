@@ -5,7 +5,7 @@
     "slug": "incremental-system-discovery",
     "description": "Conversational flow that identifies and integrates new systems into existing workspace architecture through targeted questioning and dependency analysis.",
     "conversationStarter": "🔍 What systems are missing from your architecture?\n\nTell me about any external APIs, internal tools, databases, \nor infrastructure that connects to your existing systems.",
-    "version": "1.0.31",
+    "version": "1.0.32",
     "icon": "SquaresUnite",
     "capabilities": [],
     "examples": [],
@@ -25,7 +25,17 @@
     "hydrationStatus": "hydrated",
     "orgCode": "org-g-s922vrvzzt",
     "errorCount": 0,
-    "nodeCount": 7
+    "nodeCount": 7,
+    "inputSchema": {
+      "type": "static",
+      "rootSchemaName": "ContextBuilderInput",
+      "schemaName": "ContextBuilderInput"
+    },
+    "outputSchema": {
+      "type": "static",
+      "rootSchemaName": "CommandResultOutput",
+      "schemaName": "CommandResultOutput"
+    }
   },
   "detail": {
     "id": "01K0SN5D6H97VMKM2YTMZZFVQA",
@@ -59,8 +69,8 @@
         ],
         "style": {
           "position": {
-            "x": 465,
-            "y": -45
+            "x": 390,
+            "y": 30
           }
         },
         "fieldMappings": []
@@ -225,8 +235,8 @@
     "downloadCount": 0
   },
   "disable": false,
-  "createdAt": "2025-08-22T19:36:00.428Z",
-  "updatedAt": "2025-08-22T19:36:00.428Z",
+  "createdAt": "2025-09-19T08:06:30.425Z",
+  "updatedAt": "2025-09-19T08:06:30.425Z",
   "createdBy": "347fe6b4-4e24-498e-b858-7c1eab51918b",
   "updatedBy": "347fe6b4-4e24-498e-b858-7c1eab51918b"
 }
