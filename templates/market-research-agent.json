@@ -4,8 +4,8 @@
     "name": "Market Research Agent",
     "slug": "market-research-agent",
     "description": "Analyzes market landscapes, competitor positioning, and technology trends to identify opportunities and threats in your business domain. Maps market dynamics to your system architecture and business processes.",
-    "conversationStarter": "🔍 Let's map your market landscape!\n\nDescribe your product/service, target market, and key competitors. \nInclude any specific market questions you're exploring - I'll research \nthe competitive landscape and map how market forces connect to your \nsystems and strategy.",
-    "version": "1.0.6",
+    "conversationStarter": "## Describe your product and the problem it solves\n\n**📋 Format:**\n- Product name and what it does\n- Problem it addresses and who has this problem\n- Target audience (optional)\n\n**💡 Example:**\n```\nResearch TaskFlow Pro - project management tool that gives unified visibility across all team tools.\n\nProblem: Teams use scattered tools (Slack, Jira, email) making it impossible to track real project status. Creates missed deadlines and communication gaps.\n\nTarget: Project managers, team leads at growing companies.\n```\n\n**🎯 Your turn:** Describe your product and problem below.",
+    "version": "1.0.9",
     "icon": "TrendingUp",
     "capabilities": [],
     "examples": [],
@@ -19,10 +19,20 @@
     "groupId": "cg-org-g-s922vrvzzt-wsp-o-hd7js5i4cd",
     "metaGraphType": "intelligence",
     "artifactId": null,
-    "hydrationStatus": "empty",
+    "hydrationStatus": "hydrated",
     "orgCode": "org-g-s922vrvzzt",
     "errorCount": 0,
-    "nodeCount": 4
+    "nodeCount": 5,
+    "inputSchema": {
+      "type": "static",
+      "rootSchemaName": "ContextBuilderInput",
+      "schemaName": "ContextBuilderInput"
+    },
+    "outputSchema": {
+      "type": "static",
+      "rootSchemaName": "MessageComposerOutput",
+      "schemaName": "MessageComposerOutput"
+    }
   },
   "detail": {
     "id": "01K0YFMBVJTK5526B0DK82P5CQ",
@@ -57,7 +67,7 @@
         "style": {
           "position": {
             "x": 330,
-            "y": 210
+            "y": 300
           }
         },
         "fieldMappings": []
@@ -87,10 +97,35 @@
         "style": {
           "position": {
             "x": 285,
-            "y": 0
+            "y": -30
           }
         },
         "fieldMappings": []
+      },
+      {
+        "nodePath": "protocol/message-composer",
+        "nodeInstanceName": "node_1753955692450",
+        "displayName": "message-composer",
+        "description": "Simple pass-through node that maps input to output with optional message configuration",
+        "kind": "tool-call",
+        "capabilities": [
+          "MESSAGE_PASSTHROUGH",
+          "DATA_MAPPING",
+          "MESSAGE_FORMATTING"
+        ],
+        "style": {
+          "position": {
+            "x": 285,
+            "y": 135
+          }
+        },
+        "fieldMappings": [
+          {
+            "targetField": "message",
+            "transformType": "template",
+            "transformation": "Research completed"
+          }
+        ]
       }
     ],
     "edges": [
@@ -107,6 +142,11 @@
       {
         "id": "edge_1753388431256",
         "from": "node_1753388406652",
+        "to": "node_1753955692450"
+      },
+      {
+        "id": "edge_1753955709135",
+        "from": "node_1753955692450",
         "to": "__end__"
       }
     ],
@@ -125,8 +165,8 @@
     "downloadCount": 0
   },
   "disable": false,
-  "createdAt": "2025-07-25T19:59:45.178Z",
-  "updatedAt": "2025-07-25T19:59:45.178Z",
+  "createdAt": "2025-09-19T08:09:12.513Z",
+  "updatedAt": "2025-09-19T08:09:12.513Z",
   "createdBy": "347fe6b4-4e24-498e-b858-7c1eab51918b",
   "updatedBy": "347fe6b4-4e24-498e-b858-7c1eab51918b"
 }
