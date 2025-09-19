@@ -1,0 +1,157 @@
+{
+  "id": "01JYPDP8FKHCN5SSKFY05A85HX",
+  "definition": {
+    "name": " Attribute Enhancement Agent",
+    "slug": "attribute-enhancement-agent",
+    "description": "Identifies and adds business-specific metadata, tags, and custom properties to existing entities and systems. Adapts organizational taxonomies and domain-specific classifications to enrich your knowledge graph with contextual business intelligence.",
+    "conversationStarter": "🎯 How do you want to improve the system details? Describe what kind of attributes you need. If not sure, just describe the nature of it.",
+    "version": "0.0.8",
+    "icon": "BookPlus",
+    "capabilities": [],
+    "examples": [],
+    "tags": [],
+    "artifactParams": {
+      "type": "WorkspaceArtifactParams",
+      "workspaceCode": "wsp-o-hd7js5i4cd"
+    },
+    "groupId": "cg-org-g-s922vrvzzt-wsp-o-hd7js5i4cd",
+    "metaGraphType": "system",
+    "artifactId": null,
+    "hydrationStatus": "hydrated",
+    "orgCode": "org-g-s922vrvzzt",
+    "errorCount": 3,
+    "nodeCount": 5,
+    "inputSchema": {
+      "type": "static",
+      "rootSchemaName": "InitWorkspaceNodeInput",
+      "schemaName": "InitWorkspaceNodeInput"
+    },
+    "outputSchema": {
+      "type": "static",
+      "rootSchemaName": "ArtifactContainerOutput",
+      "schemaName": "ArtifactContainerOutput"
+    }
+  },
+  "detail": {
+    "id": "01JYPDPARDJYPZKSMTDFPTVS7D",
+    "metaGraphDefinitionId": "01JYPDP8FKHCN5SSKFY05A85HX",
+    "nodes": [
+      {
+        "nodePath": "system/__start__",
+        "nodeInstanceName": "__start__",
+        "displayName": "__start__",
+        "description": "Starting point of the workflow",
+        "kind": "start",
+        "capabilities": [
+          "workflow:start"
+        ],
+        "style": {
+          "position": {
+            "x": -165,
+            "y": -255
+          }
+        },
+        "fieldMappings": []
+      },
+      {
+        "nodePath": "system/__end__",
+        "nodeInstanceName": "__end__",
+        "displayName": "__end__",
+        "description": "Ending point of the workflow",
+        "kind": "end",
+        "capabilities": [
+          "workflow:end"
+        ],
+        "style": {
+          "position": {
+            "x": 825,
+            "y": -60
+          }
+        },
+        "fieldMappings": []
+      },
+      {
+        "nodePath": "artifacts/system/init-workspace",
+        "nodeInstanceName": "node_1758219059501",
+        "displayName": "init-workspace",
+        "description": "Initialize a workspace by extracting core entities and relationships from a user-provided scenario or context.",
+        "kind": "tool-call",
+        "capabilities": [],
+        "style": {
+          "position": {
+            "x": 0,
+            "y": -180
+          }
+        },
+        "fieldMappings": []
+      },
+      {
+        "nodePath": "artifacts/system/discover-systems",
+        "nodeInstanceName": "node_1758219068375",
+        "displayName": "discover-systems",
+        "description": "Node for discovering new systems and integrating them into existing workspace architecture",
+        "kind": "tool-call",
+        "capabilities": [],
+        "style": {
+          "position": {
+            "x": 330,
+            "y": -180
+          }
+        },
+        "fieldMappings": []
+      },
+      {
+        "nodePath": "artifacts/domain_entity/find-by-id",
+        "nodeInstanceName": "node_1758220211190",
+        "displayName": "find-by-id",
+        "description": "Retrieves a specific entity by its unique identifier, returning the complete entity container if found",
+        "kind": "tool-call",
+        "capabilities": [],
+        "style": {
+          "position": {
+            "x": 615,
+            "y": -180
+          }
+        },
+        "fieldMappings": []
+      }
+    ],
+    "edges": [
+      {
+        "id": "__start__-to-__end__",
+        "from": "__start__",
+        "to": "node_1758219059501"
+      },
+      {
+        "id": "edge_1758219072275",
+        "from": "node_1758219059501",
+        "to": "node_1758219068375"
+      },
+      {
+        "id": "edge_1758220215050",
+        "from": "node_1758219068375",
+        "to": "node_1758220211190"
+      },
+      {
+        "id": "edge_1758220222063",
+        "from": "node_1758220211190",
+        "to": "__end__"
+      }
+    ],
+    "annotations": [],
+    "conditionalEdges": [],
+    "executionConfig": null,
+    "status": null,
+    "orgCode": "org-g-s922vrvzzt",
+    "styles": null
+  },
+  "license": "Mit",
+  "metadata": {
+    "downloadCount": 0
+  },
+  "disable": false,
+  "createdAt": "2025-09-19T08:03:51.359Z",
+  "updatedAt": "2025-09-19T08:03:51.359Z",
+  "createdBy": "347fe6b4-4e24-498e-b858-7c1eab51918b",
+  "updatedBy": "347fe6b4-4e24-498e-b858-7c1eab51918b"
+}
