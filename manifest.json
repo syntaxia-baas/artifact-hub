@@ -1,7 +1,18 @@
 {
-  "lastUpdated": "2025-09-19T08:06:31.506Z",
+  "lastUpdated": "2025-09-19T08:07:38.948Z",
   "totalTemplates": 12,
   "graphs": [
+    {
+      "id": "01K0YG7X7HBGP89K6PQQSDKNMP",
+      "name": "Communication Intelligence Extractor",
+      "createdAt": "2025-09-19T08:07:37.872Z",
+      "updatedAt": "2025-09-19T08:07:37.872Z",
+      "createdBy": "347fe6b4-4e24-498e-b858-7c1eab51918b",
+      "downloadCount": 0,
+      "description": "Monitors Slack conversations to extract key decisions, issues, and insights, then maps them to relevant systems and processes. Captures organizational knowledge from informal communications.",
+      "filePath": "templates/communication-intelligence-extractor.json",
+      "version": "1.0.7"
+    },
     {
       "id": "01K0SN50K41RNWA1GM3VTC1GRS",
       "name": "Incremental System Discovery",
@@ -56,17 +67,6 @@
       "description": "Identifies and adds business-specific metadata, tags, and custom properties to existing entities and systems. Adapts organizational taxonomies and domain-specific classifications to enrich your knowledge graph with contextual business intelligence.",
       "filePath": "templates/domain-attributes-builder.json",
       "version": "0.0.14"
-    },
-    {
-      "id": "01K0YG7X7HBGP89K6PQQSDKNMP",
-      "name": " Communication Intelligence Extractor",
-      "createdAt": "2025-07-25T20:00:39.609Z",
-      "updatedAt": "2025-07-25T20:00:39.609Z",
-      "createdBy": "347fe6b4-4e24-498e-b858-7c1eab51918b",
-      "downloadCount": 0,
-      "description": "Monitors Slack conversations to extract key decisions, issues, and insights, then maps them to relevant systems and processes. Captures organizational knowledge from informal communications.",
-      "filePath": "templates/communication-intelligence-extractor.json",
-      "version": "1.0.6"
     },
     {
       "id": "01K0YG5V016YKXW77793Q8CX3X",
