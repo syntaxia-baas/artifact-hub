@@ -1,7 +1,18 @@
 {
-  "lastUpdated": "2025-09-19T08:08:34.102Z",
+  "lastUpdated": "2025-09-19T08:08:43.571Z",
   "totalTemplates": 12,
   "graphs": [
+    {
+      "id": "01K0YFQSTB3WCZ1AQTQQ6CVNBE",
+      "name": "Decision Analysis Agent",
+      "createdAt": "2025-09-19T08:08:42.452Z",
+      "updatedAt": "2025-09-19T08:08:42.452Z",
+      "createdBy": "347fe6b4-4e24-498e-b858-7c1eab51918b",
+      "downloadCount": 0,
+      "description": "Evaluates build-versus-buy decisions by analyzing technical requirements, team capabilities, timeline constraints, and total cost of ownership. Maps decision impacts across your system architecture.",
+      "filePath": "templates/decision-analysis-agent.json",
+      "version": "1.0.5"
+    },
     {
       "id": "01K0YG3MMXX2YMH3Q06DX2HJ3R",
       "name": "System Log Monitor Agent",
@@ -89,17 +100,6 @@
       "description": "Identifies and adds business-specific metadata, tags, and custom properties to existing entities and systems. Adapts organizational taxonomies and domain-specific classifications to enrich your knowledge graph with contextual business intelligence.",
       "filePath": "templates/domain-attributes-builder.json",
       "version": "0.0.14"
-    },
-    {
-      "id": "01K0YFQSTB3WCZ1AQTQQ6CVNBE",
-      "name": "Decision Analysis Agent",
-      "createdAt": "2025-07-25T20:00:19.930Z",
-      "updatedAt": "2025-07-25T20:00:19.930Z",
-      "createdBy": "347fe6b4-4e24-498e-b858-7c1eab51918b",
-      "downloadCount": 0,
-      "description": "Evaluates build-versus-buy decisions by analyzing technical requirements, team capabilities, timeline constraints, and total cost of ownership. Maps decision impacts across your system architecture.",
-      "filePath": "templates/decision-analysis-agent.json",
-      "version": "1.0.4"
     },
     {
       "id": "01K0YFMAYNDMBZWCJFDH1C1M31",
