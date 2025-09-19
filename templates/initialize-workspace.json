@@ -5,11 +5,14 @@
     "slug": "initialize-workspace",
     "description": "discovers and maps your digital environment by creating entities, processes, and systems along with their interconnections. Generates business-specific attributes and metadata tailored to your organizational context, establishing a foundational knowledge graph for downstream automation and analysis",
     "conversationStarter": "What you want to build?",
-    "version": "0.0.10",
+    "version": "0.0.15",
     "icon": "Grid2x2",
     "capabilities": [],
     "examples": [],
-    "tags": [],
+    "tags": [
+      "enterprise",
+      "startups"
+    ],
     "artifactParams": {
       "type": "WorkspaceArtifactParams",
       "workspaceCode": "wsp-o-hd7js5i4cd"
@@ -20,7 +23,17 @@
     "hydrationStatus": "empty",
     "orgCode": "org-g-s922vrvzzt",
     "errorCount": 0,
-    "nodeCount": 18
+    "nodeCount": 18,
+    "inputSchema": {
+      "type": "static",
+      "rootSchemaName": "InitWorkspaceNodeInput",
+      "schemaName": "InitWorkspaceNodeInput"
+    },
+    "outputSchema": {
+      "type": "static",
+      "rootSchemaName": "ProfileCombinedPersistOutput",
+      "schemaName": "ProfileCombinedPersistOutput"
+    }
   },
   "detail": {
     "id": "01JYP6R2WGG17ZSRFFNB8BW7F9",
@@ -37,7 +50,7 @@
         ],
         "style": {
           "position": {
-            "x": 90,
+            "x": 120,
             "y": -15
           }
         },
@@ -67,18 +80,30 @@
         "description": "",
         "kind": "tool-call",
         "capabilities": [],
+        "style": {
+          "position": {
+            "x": 195,
+            "y": 45
+          }
+        },
         "fieldMappings": []
       },
       {
         "nodePath": "artifacts/domain_entity/create-with-human-in-loop",
         "nodeInstanceName": "node_1750961486789",
-        "displayName": "Persist domain models",
+        "displayName": "Domain models persist",
         "description": "Creates multiple DomainEntity in a single batch operation, returning a list of entity containers for the created entities",
         "kind": "human-in-loop",
         "capabilities": [
           "BATCH_CREATE",
           "HUMAN_IN_LOOP"
         ],
+        "style": {
+          "position": {
+            "x": 450,
+            "y": 30
+          }
+        },
         "fieldMappings": [
           {
             "targetField": "entities",
@@ -91,7 +116,7 @@
       {
         "nodePath": "artifacts/domain_group/create-with-human-in-loop",
         "nodeInstanceName": "node_1750961654266",
-        "displayName": "Persist domain groups",
+        "displayName": "Domain groups persist",
         "description": "Creates multiple DomainGroup in a single batch operation, returning a list of entity containers for the created entities",
         "kind": "human-in-loop",
         "capabilities": [
@@ -116,7 +141,7 @@
       {
         "nodePath": "artifacts/system/create-with-human-in-loop",
         "nodeInstanceName": "node_1750961662247",
-        "displayName": "Persist systems",
+        "displayName": "Systems persist",
         "description": "Creates multiple WorkspaceSystemEntity in a single batch operation, returning a list of entity containers for the created entities",
         "kind": "human-in-loop",
         "capabilities": [
@@ -126,7 +151,7 @@
         "style": {
           "position": {
             "x": 450,
-            "y": 495
+            "y": 480
           }
         },
         "fieldMappings": [
@@ -141,7 +166,7 @@
       {
         "nodePath": "artifacts/business_process/create-with-human-in-loop",
         "nodeInstanceName": "node_1750961756539",
-        "displayName": "Persist processes",
+        "displayName": "Processes persist",
         "description": "Creates multiple BusinessProcess in a single batch operation, returning a list of entity containers for the created entities",
         "kind": "human-in-loop",
         "capabilities": [
@@ -166,7 +191,7 @@
       {
         "nodePath": "artifacts/connection/create-with-human-in-loop",
         "nodeInstanceName": "node_1750961930132",
-        "displayName": "Persist connections",
+        "displayName": "Connections persist",
         "description": "Creates multiple Connection in a single batch operation, returning a list of entity containers for the created entities",
         "kind": "human-in-loop",
         "capabilities": [
@@ -217,7 +242,7 @@
       {
         "nodePath": "artifacts/system/attributes-persist",
         "nodeInstanceName": "node_1751050790359",
-        "displayName": "attributes-persist",
+        "displayName": "Model attributes persist",
         "description": "Node for persisting both data and respective schemas for core entities",
         "kind": "tool-call",
         "capabilities": [],
@@ -238,7 +263,7 @@
       {
         "nodePath": "artifacts/system/attributes-persist",
         "nodeInstanceName": "node_1751108717240",
-        "displayName": "attributes-persist",
+        "displayName": "Group attributes-persist",
         "description": "Node for persisting both data and respective schemas for core entities",
         "kind": "tool-call",
         "capabilities": [],
@@ -311,7 +336,7 @@
       {
         "nodePath": "artifacts/system/attributes-persist",
         "nodeInstanceName": "node_1751112862081",
-        "displayName": "attributes-persist",
+        "displayName": "system attributes-persist",
         "description": "Node for persisting both data and respective schemas for core entities",
         "kind": "tool-call",
         "capabilities": [],
@@ -358,7 +383,7 @@
       {
         "nodePath": "artifacts/system/attributes-persist",
         "nodeInstanceName": "node_1751112940517",
-        "displayName": "attributes-persist",
+        "displayName": "Processes attributes-persist",
         "description": "Node for persisting both data and respective schemas for core entities",
         "kind": "tool-call",
         "capabilities": [],
@@ -386,7 +411,7 @@
         "style": {
           "position": {
             "x": 825,
-            "y": 885
+            "y": 900
           }
         },
         "fieldMappings": [
@@ -405,14 +430,14 @@
       {
         "nodePath": "artifacts/system/attributes-persist",
         "nodeInstanceName": "node_1751112989831",
-        "displayName": "attributes-persist",
+        "displayName": "Connection attributes-persist",
         "description": "Node for persisting both data and respective schemas for core entities",
         "kind": "tool-call",
         "capabilities": [],
         "style": {
           "position": {
-            "x": 1050,
-            "y": 885
+            "x": 1065,
+            "y": 900
           }
         },
         "fieldMappings": [
@@ -528,8 +553,8 @@
     "downloadCount": 0
   },
   "disable": false,
-  "createdAt": "2025-08-29T11:10:04.882Z",
-  "updatedAt": "2025-08-29T11:10:04.882Z",
+  "createdAt": "2025-09-19T08:10:33.545Z",
+  "updatedAt": "2025-09-19T08:10:33.545Z",
   "createdBy": "347fe6b4-4e24-498e-b858-7c1eab51918b",
   "updatedBy": "347fe6b4-4e24-498e-b858-7c1eab51918b"
 }
