@@ -5,7 +5,7 @@
     "slug": "connections-mapper",
     "description": "Interactive process that discovers, validates, and creates connections between systems through dependency analysis and data flow identification",
     "conversationStarter": "🔗 How do your systems communicate?\n\nDescribe the key data flows and dependencies between \nyour systems - which ones call each other?",
-    "version": "1.0.18",
+    "version": "1.0.19",
     "icon": "Waypoints",
     "capabilities": [],
     "examples": [],
@@ -21,10 +21,20 @@
     "groupId": "cg-org-g-s922vrvzzt-wsp-o-hd7js5i4cd",
     "metaGraphType": "connection",
     "artifactId": null,
-    "hydrationStatus": "empty",
+    "hydrationStatus": "hydrated",
     "orgCode": "org-g-s922vrvzzt",
     "errorCount": 0,
-    "nodeCount": 5
+    "nodeCount": 5,
+    "inputSchema": {
+      "type": "static",
+      "rootSchemaName": "ContextBuilderInput",
+      "schemaName": "ContextBuilderInput"
+    },
+    "outputSchema": {
+      "type": "static",
+      "rootSchemaName": "CommandResultOutput",
+      "schemaName": "CommandResultOutput"
+    }
   },
   "detail": {
     "id": "01K0SP0BDJ72G0PHP8WHZ5CDX8",
@@ -41,8 +51,8 @@
         ],
         "style": {
           "position": {
-            "x": 480,
-            "y": -450
+            "x": 495,
+            "y": -465
           }
         },
         "fieldMappings": []
@@ -162,8 +172,8 @@
     "downloadCount": 0
   },
   "disable": false,
-  "createdAt": "2025-07-25T19:59:37.662Z",
-  "updatedAt": "2025-07-25T19:59:37.662Z",
+  "createdAt": "2025-09-19T08:09:37.245Z",
+  "updatedAt": "2025-09-19T08:09:37.245Z",
   "createdBy": "347fe6b4-4e24-498e-b858-7c1eab51918b",
   "updatedBy": "347fe6b4-4e24-498e-b858-7c1eab51918b"
 }
