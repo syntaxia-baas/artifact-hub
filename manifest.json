@@ -1,7 +1,18 @@
 {
-  "lastUpdated": "2025-09-19T08:08:21.254Z",
+  "lastUpdated": "2025-09-19T08:08:34.102Z",
   "totalTemplates": 12,
   "graphs": [
+    {
+      "id": "01K0YG3MMXX2YMH3Q06DX2HJ3R",
+      "name": "System Log Monitor Agent",
+      "createdAt": "2025-09-19T08:08:33.092Z",
+      "updatedAt": "2025-09-19T08:08:33.092Z",
+      "createdBy": "347fe6b4-4e24-498e-b858-7c1eab51918b",
+      "downloadCount": 0,
+      "description": "Monitors system logs, error patterns, and performance metrics to identify issues, trends, and optimization opportunities. Maps incidents to system dependencies and business impact.",
+      "filePath": "templates/system-log-monitor-agent.json",
+      "version": "1.0.4"
+    },
     {
       "id": "01K0YG5V016YKXW77793Q8CX3X",
       "name": "Architecture Analysis Agent",
@@ -78,17 +89,6 @@
       "description": "Identifies and adds business-specific metadata, tags, and custom properties to existing entities and systems. Adapts organizational taxonomies and domain-specific classifications to enrich your knowledge graph with contextual business intelligence.",
       "filePath": "templates/domain-attributes-builder.json",
       "version": "0.0.14"
-    },
-    {
-      "id": "01K0YG3MMXX2YMH3Q06DX2HJ3R",
-      "name": "System Log Monitor Agent",
-      "createdAt": "2025-07-25T20:00:26.955Z",
-      "updatedAt": "2025-07-25T20:00:26.955Z",
-      "createdBy": "347fe6b4-4e24-498e-b858-7c1eab51918b",
-      "downloadCount": 0,
-      "description": "Monitors system logs, error patterns, and performance metrics to identify issues, trends, and optimization opportunities. Maps incidents to system dependencies and business impact.",
-      "filePath": "templates/system-log-monitor-agent.json",
-      "version": "1.0.3"
     },
     {
       "id": "01K0YFQSTB3WCZ1AQTQQ6CVNBE",
