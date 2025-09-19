@@ -1,7 +1,18 @@
 {
-  "lastUpdated": "2025-09-19T08:10:34.687Z",
+  "lastUpdated": "2025-09-19T08:10:46.707Z",
   "totalTemplates": 12,
   "graphs": [
+    {
+      "id": "01JYPS7J4M1X9476DPHKGSAZ14",
+      "name": "Domain Attributes builder",
+      "createdAt": "2025-09-19T08:10:45.607Z",
+      "updatedAt": "2025-09-19T08:10:45.607Z",
+      "createdBy": "347fe6b4-4e24-498e-b858-7c1eab51918b",
+      "downloadCount": 0,
+      "description": "Identifies and adds business-specific metadata, tags, and custom properties to existing entities and systems. Adapts organizational taxonomies and domain-specific classifications to enrich your knowledge graph with contextual business intelligence.",
+      "filePath": "templates/domain-attributes-builder.json",
+      "version": "0.0.15"
+    },
     {
       "id": "01JYP6R1V0N4SFDWRQDY8FRRTH",
       "name": "Initialize workspace",
@@ -111,17 +122,6 @@
       "description": "Identifies and adds business-specific metadata, tags, and custom properties to existing entities and systems. Adapts organizational taxonomies and domain-specific classifications to enrich your knowledge graph with contextual business intelligence.",
       "filePath": "templates/attribute-enhancement-agent.json",
       "version": "0.0.8"
-    },
-    {
-      "id": "01JYPS7J4M1X9476DPHKGSAZ14",
-      "name": "Domain Attributes builder",
-      "createdAt": "2025-08-28T17:21:30.174Z",
-      "updatedAt": "2025-08-28T17:21:30.174Z",
-      "createdBy": "347fe6b4-4e24-498e-b858-7c1eab51918b",
-      "downloadCount": 0,
-      "description": "Identifies and adds business-specific metadata, tags, and custom properties to existing entities and systems. Adapts organizational taxonomies and domain-specific classifications to enrich your knowledge graph with contextual business intelligence.",
-      "filePath": "templates/domain-attributes-builder.json",
-      "version": "0.0.14"
     },
     {
       "id": "01JYPDZBVTRKNW8NPMCYV449RR",
