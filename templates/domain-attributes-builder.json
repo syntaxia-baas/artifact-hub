@@ -5,7 +5,7 @@
     "slug": "domain-attributes-builder",
     "description": "Identifies and adds business-specific metadata, tags, and custom properties to existing entities and systems. Adapts organizational taxonomies and domain-specific classifications to enrich your knowledge graph with contextual business intelligence.",
     "conversationStarter": "🎯 How do you want to improve the system details? Describe what kind of attributes you need. If not sure, just describe the nature of it.",
-    "version": "0.0.14",
+    "version": "0.0.15",
     "icon": "DiamondPlus",
     "capabilities": [],
     "examples": [],
@@ -22,7 +22,17 @@
     "hydrationStatus": "hydrated",
     "orgCode": "org-g-s922vrvzzt",
     "errorCount": 0,
-    "nodeCount": 5
+    "nodeCount": 5,
+    "inputSchema": {
+      "type": "static",
+      "rootSchemaName": "ContextBuilderInput",
+      "schemaName": "ContextBuilderInput"
+    },
+    "outputSchema": {
+      "type": "static",
+      "rootSchemaName": "ProfileCombinedPersistOutput",
+      "schemaName": "ProfileCombinedPersistOutput"
+    }
   },
   "detail": {
     "id": "01JYPS7K4A0J2ZS2KAJTWW5CWV",
@@ -106,7 +116,7 @@
         "capabilities": [],
         "style": {
           "position": {
-            "x": 240,
+            "x": 225,
             "y": 120
           }
         },
@@ -150,8 +160,8 @@
     "downloadCount": 0
   },
   "disable": false,
-  "createdAt": "2025-08-28T17:21:30.174Z",
-  "updatedAt": "2025-08-28T17:21:30.174Z",
+  "createdAt": "2025-09-19T08:10:45.607Z",
+  "updatedAt": "2025-09-19T08:10:45.607Z",
   "createdBy": "347fe6b4-4e24-498e-b858-7c1eab51918b",
   "updatedBy": "347fe6b4-4e24-498e-b858-7c1eab51918b"
 }
