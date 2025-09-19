@@ -4,8 +4,8 @@
     "name": "Decision Analysis Agent",
     "slug": "decision-analysis-agent",
     "description": "Evaluates build-versus-buy decisions by analyzing technical requirements, team capabilities, timeline constraints, and total cost of ownership. Maps decision impacts across your system architecture.",
-    "conversationStarter": "⚖️ Let's analyze your build vs buy decision!\n\nDescribe the capability you need, your current tech stack, team skills, \nand timeline. Include any vendor solutions you're considering - I'll \nmap the technical and business tradeoffs across your architecture.",
-    "version": "1.0.4",
+    "conversationStarter": "## Describe the technology or strategic decision you need to make\n\n**📋 Format:**\n- Decision context (what choice you're facing)\n- Current situation and constraints\n- Available options you're considering\n- Key stakeholders and success criteria (optional)\n\n**💡 Example:**\n\\`\\`\\`\nDecision: Build vs Buy customer support ticketing system for our 200-person SaaS company.\n\nCurrent situation: Using basic email-based support causing delays and customer complaints. Need integrated solution with our CRM and billing systems.\n\nOptions considering: Build custom solution ($300K, 9 months), buy Zendesk ($50K/year), buy Intercom ($80K/year), or partner with specialized support vendor.\n\nSuccess criteria: Reduce response time to under 2 hours, integrate with Salesforce, support 1000+ tickets/month.\n\\`\\`\\`\n\n**🎯 Your turn:** Describe your decision context and options below.",
+    "version": "1.0.5",
     "icon": "Scale",
     "capabilities": [],
     "examples": [],
@@ -19,10 +19,20 @@
     "groupId": "cg-org-g-s922vrvzzt-wsp-o-hd7js5i4cd",
     "metaGraphType": "intelligence",
     "artifactId": null,
-    "hydrationStatus": "empty",
+    "hydrationStatus": "hydrated",
     "orgCode": "org-g-s922vrvzzt",
     "errorCount": 0,
-    "nodeCount": 4
+    "nodeCount": 4,
+    "inputSchema": {
+      "type": "static",
+      "rootSchemaName": "ContextBuilderInput",
+      "schemaName": "ContextBuilderInput"
+    },
+    "outputSchema": {
+      "type": "static",
+      "rootSchemaName": "ResearchAutomationNodeOutput",
+      "schemaName": "ResearchAutomationNodeOutput"
+    }
   },
   "detail": {
     "id": "01K0YFQTPQAWD1MTHMX3C4KBSJ",
@@ -71,8 +81,8 @@
         "capabilities": [],
         "style": {
           "position": {
-            "x": 45,
-            "y": 120
+            "x": 30,
+            "y": 105
           }
         },
         "fieldMappings": []
@@ -125,8 +135,8 @@
     "downloadCount": 0
   },
   "disable": false,
-  "createdAt": "2025-07-25T20:00:19.930Z",
-  "updatedAt": "2025-07-25T20:00:19.930Z",
+  "createdAt": "2025-09-19T08:08:42.452Z",
+  "updatedAt": "2025-09-19T08:08:42.452Z",
   "createdBy": "347fe6b4-4e24-498e-b858-7c1eab51918b",
   "updatedBy": "347fe6b4-4e24-498e-b858-7c1eab51918b"
 }
