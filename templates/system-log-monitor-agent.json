@@ -4,8 +4,8 @@
     "name": "System Log Monitor Agent",
     "slug": "system-log-monitor-agent",
     "description": "Monitors system logs, error patterns, and performance metrics to identify issues, trends, and optimization opportunities. Maps incidents to system dependencies and business impact.",
-    "conversationStarter": "📊 Let's monitor your system intelligence!\n\nConnect your logging service (Sentry, DataDog, etc.) or describe your \nmonitoring setup. I'll analyze patterns, map incidents to system \ndependencies, and track how issues propagate through your architecture.",
-    "version": "1.0.3",
+    "conversationStarter": "## Describe your system and monitoring needs\n\n**📋 Format:**\n- System overview (architecture, scale, critical components)\n- Current monitoring setup and pain points\n- Specific issues or insights you need (optional)\n\n**💡 Example:**\n```\nMicroservices architecture with 20+ services handling 1M+ requests/day across AWS infrastructure.\n\nCurrent monitoring: Basic CloudWatch metrics and some application logs. Getting alerts but many false positives. Hard to understand root causes when issues occur.\n\nNeed insights on: Which services are performance bottlenecks, how to predict capacity issues before they happen, and why we're getting intermittent 5xx errors that are hard to reproduce.\n```\n\n**🎯 Your turn:** Describe your system and monitoring challenges below.",
+    "version": "1.0.4",
     "icon": "Activity",
     "capabilities": [],
     "examples": [],
@@ -19,10 +19,20 @@
     "groupId": "cg-org-g-s922vrvzzt-wsp-o-hd7js5i4cd",
     "metaGraphType": "intelligence",
     "artifactId": null,
-    "hydrationStatus": "empty",
+    "hydrationStatus": "hydrated",
     "orgCode": "org-g-s922vrvzzt",
     "errorCount": 0,
-    "nodeCount": 4
+    "nodeCount": 4,
+    "inputSchema": {
+      "type": "static",
+      "rootSchemaName": "ContextBuilderInput",
+      "schemaName": "ContextBuilderInput"
+    },
+    "outputSchema": {
+      "type": "static",
+      "rootSchemaName": "ResearchAutomationNodeOutput",
+      "schemaName": "ResearchAutomationNodeOutput"
+    }
   },
   "detail": {
     "id": "01K0YG3NJ76W59QNY64A4MCZNV",
@@ -78,6 +88,12 @@
         "description": "Node for automated research and analysis tasks with workspace context",
         "kind": "tool-call",
         "capabilities": [],
+        "style": {
+          "position": {
+            "x": 30,
+            "y": 300
+          }
+        },
         "fieldMappings": []
       }
     ],
@@ -113,8 +129,8 @@
     "downloadCount": 0
   },
   "disable": false,
-  "createdAt": "2025-07-25T20:00:26.955Z",
-  "updatedAt": "2025-07-25T20:00:26.955Z",
+  "createdAt": "2025-09-19T08:08:33.092Z",
+  "updatedAt": "2025-09-19T08:08:33.092Z",
   "createdBy": "347fe6b4-4e24-498e-b858-7c1eab51918b",
   "updatedBy": "347fe6b4-4e24-498e-b858-7c1eab51918b"
 }
