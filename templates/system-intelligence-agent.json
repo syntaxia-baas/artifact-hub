@@ -1,0 +1,122 @@
+{
+  "id": "01JYPDZBVTRKNW8NPMCYV449RR",
+  "definition": {
+    "name": "System Intelligence Agent",
+    "slug": "system-intelligence-agent",
+    "description": "Enables natural language querying across your mapped digital systems and connections. Analyzes relationships, dependencies, and data flows to provide actionable insights about system performance, integration bottlenecks, and architectural patterns within your environment.",
+    "conversationStarter": "🔗 Describe which systems you want to know about and their dependencies.",
+    "version": "0.0.4",
+    "icon": "SquaresIntersect",
+    "capabilities": [],
+    "examples": [],
+    "tags": [
+      "it-teams",
+      "collaboration",
+      "product-teams",
+      "operations-teams"
+    ],
+    "artifactParams": {
+      "type": "WorkspaceArtifactParams",
+      "workspaceCode": "wsp-o-hd7js5i4cd"
+    },
+    "groupId": "cg-org-g-s922vrvzzt-wsp-o-hd7js5i4cd",
+    "metaGraphType": "system",
+    "artifactId": null,
+    "hydrationStatus": "hydrated",
+    "orgCode": "org-g-s922vrvzzt",
+    "errorCount": 0,
+    "nodeCount": 3,
+    "inputSchema": {
+      "type": "static",
+      "rootSchemaName": "InitWorkspaceNodeInput",
+      "schemaName": "InitWorkspaceNodeInput"
+    },
+    "outputSchema": {
+      "type": "static",
+      "rootSchemaName": "InitWorkspaceNodeOutput",
+      "schemaName": "InitWorkspaceNodeOutput"
+    }
+  },
+  "detail": {
+    "id": "01JYPDZCRZ46HCW8979MRPCHX6",
+    "metaGraphDefinitionId": "01JYPDZBVTRKNW8NPMCYV449RR",
+    "nodes": [
+      {
+        "nodePath": "system/__start__",
+        "nodeInstanceName": "__start__",
+        "displayName": "__start__",
+        "description": "Starting point of the workflow",
+        "kind": "start",
+        "capabilities": [
+          "workflow:start"
+        ],
+        "style": {
+          "position": {
+            "x": -375,
+            "y": 45
+          }
+        },
+        "fieldMappings": []
+      },
+      {
+        "nodePath": "system/__end__",
+        "nodeInstanceName": "__end__",
+        "displayName": "__end__",
+        "description": "Ending point of the workflow",
+        "kind": "end",
+        "capabilities": [
+          "workflow:end"
+        ],
+        "style": {
+          "position": {
+            "x": 30,
+            "y": 240
+          }
+        },
+        "fieldMappings": []
+      },
+      {
+        "nodePath": "artifacts/system/init-workspace",
+        "nodeInstanceName": "node_1750952101322",
+        "displayName": "init-workspace",
+        "description": "",
+        "kind": "tool-call",
+        "capabilities": [],
+        "style": {
+          "position": {
+            "x": -210,
+            "y": 135
+          }
+        },
+        "fieldMappings": []
+      }
+    ],
+    "edges": [
+      {
+        "id": "edge_1758269624126",
+        "from": "node_1750952101322",
+        "to": "__end__"
+      },
+      {
+        "id": "edge-__start__-node_1750952101322",
+        "from": "__start__",
+        "to": "node_1750952101322"
+      }
+    ],
+    "annotations": [],
+    "conditionalEdges": [],
+    "executionConfig": null,
+    "status": null,
+    "orgCode": "org-g-s922vrvzzt",
+    "styles": null
+  },
+  "license": "Mit",
+  "metadata": {
+    "downloadCount": 0
+  },
+  "disable": false,
+  "createdAt": "2025-09-19T08:14:22.007Z",
+  "updatedAt": "2025-09-19T08:14:22.007Z",
+  "createdBy": "347fe6b4-4e24-498e-b858-7c1eab51918b",
+  "updatedBy": "347fe6b4-4e24-498e-b858-7c1eab51918b"
+}
